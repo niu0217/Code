@@ -1811,7 +1811,7 @@ int main( int argc, const char ** argv )
         XMLTest( "Document is initially empty", true, doc.NoChildren() );
         doc.Clear();
         XMLTest( "Empty is empty after Clear()", true, doc.NoChildren() );
-        doc.LoadFile( "resources/dream.xml" );
+        doc.LoadFile( "./dream.xml" );
         XMLTest( "Load dream.xml", false, doc.Error() );
         XMLTest( "Document has something to Clear()", false, doc.NoChildren() );
         doc.Clear();
@@ -2029,7 +2029,7 @@ int main( int argc, const char ** argv )
 	// Check sample xml can be parsed with pedantic mode
 	{
 		XMLDocument doc(true, PEDANTIC_WHITESPACE);
-		doc.LoadFile("resources/dream.xml");
+		doc.LoadFile("./data/dream.xml");
 		XMLTest("Load dream.xml with pedantic whitespace mode", false, doc.Error());
 
 		XMLTest("Dream", "xml version=\"1.0\"",

@@ -1278,38 +1278,386 @@ void test32()
   XMLTest("Infinite loop in shallow equal.", true, equal);
 }
 
+/// 解析标签
+void test33()
+{
+  static const char *xml = "<element attrib='bar'><sub>Text</sub></element>";
+  XMLDocument doc;
+  doc.Parse(xml);
+  XMLTest("Handle, parse element with attribute and nested element", false, doc.Error());
+
+  {
+    XMLElement *ele = XMLHandle(doc).FirstChildElement("element").FirstChild().ToElement();
+    XMLTest("Handle, non-const, element is found", true, ele != 0);
+    XMLTest("Handle, non-const, element name matches", "sub", ele->Value());
+  }
+
+  {
+    XMLHandle docH(doc);
+    XMLElement *ele = docH.FirstChildElement("noSuchElement").FirstChildElement("element").ToElement();
+    XMLTest("Handle, non-const, element not found", true, ele == 0);
+  }
+
+  {
+    const XMLElement *ele = XMLConstHandle(doc).FirstChildElement("element").FirstChild().ToElement();
+    XMLTest("Handle, const, element is found", true, ele != 0);
+    XMLTest("Handle, const, element name matches", "sub", ele->Value());
+  }
+
+  {
+    XMLConstHandle docH(doc);
+    const XMLElement *ele = docH.FirstChildElement("noSuchElement").FirstChildElement("element").ToElement();
+    XMLTest("Handle, const, element not found", true, ele == 0);
+  }
+}
+
+void test34()
+{
+  // API:IntText(),UnsignedText(),Int64Text(),DoubleText(),BoolText() and FloatText() test
+  const char *xml = "<point> <IntText>-24</IntText> <UnsignedText>42</UnsignedText> \
+						   <Int64Text>38</Int64Text> <BoolText>true</BoolText> <DoubleText>2.35</DoubleText> </point>";
+  XMLDocument doc;
+  doc.Parse(xml);
+
+  const XMLElement *pointElement = doc.RootElement();
+  int test1 = pointElement->FirstChildElement("IntText")->IntText();
+  XMLTest("IntText() test", -24, test1);
+
+  unsigned test2 = pointElement->FirstChildElement("UnsignedText")->UnsignedText();
+  XMLTest("UnsignedText() test", static_cast<unsigned>(42), test2);
+
+  int64_t test3 = pointElement->FirstChildElement("Int64Text")->Int64Text();
+  XMLTest("Int64Text() test", static_cast<int64_t>(38), test3);
+
+  double test4 = pointElement->FirstChildElement("DoubleText")->DoubleText();
+  XMLTest("DoubleText() test", 2.35, test4);
+
+  float test5 = pointElement->FirstChildElement("DoubleText")->FloatText();
+  XMLTest("FloatText()) test", 2.35f, test5);
+
+  bool test6 = pointElement->FirstChildElement("BoolText")->BoolText();
+  XMLTest("FloatText()) test", true, test6);
+}
+
+void test35()
+{
+  // hex value test
+  const char *xml = "<point> <IntText>  0x2020</IntText> <UnsignedText>0X2020</UnsignedText> \
+						   <Int64Text> 0x1234</Int64Text></point>";
+  XMLDocument doc;
+  doc.Parse(xml);
+
+  const XMLElement *pointElement = doc.RootElement();
+  int test1 = pointElement->FirstChildElement("IntText")->IntText();
+  XMLTest("IntText() hex value test", 0x2020, test1);
+
+  unsigned test2 = pointElement->FirstChildElement("UnsignedText")->UnsignedText();
+  XMLTest("UnsignedText() hex value test", static_cast<unsigned>(0x2020), test2);
+
+  int64_t test3 = pointElement->FirstChildElement("Int64Text")->Int64Text();
+  XMLTest("Int64Text() hex value test", static_cast<int64_t>(0x1234), test3);
+}
+
+void test36()
+{
+  // API:ShallowEqual() test
+  const char *xml = "<playlist id = 'playlist'>"
+                    "<property name = 'track_name'>voice</property>"
+                    "</playlist>";
+  XMLDocument doc;
+  doc.Parse(xml);
+  const XMLNode *PlaylistNode = doc.RootElement();
+  const XMLNode *PropertyNode = PlaylistNode->FirstChildElement();
+  bool result;
+  result = PlaylistNode->ShallowEqual(PropertyNode);
+  XMLTest("ShallowEqual() test", false, result);
+  result = PlaylistNode->ShallowEqual(PlaylistNode);
+  XMLTest("ShallowEqual() test", true, result);
+}
+
+void test37()
+{
+  // API: previousSiblingElement() and NextSiblingElement() test
+  const char *xml = "<playlist id = 'playlist'>"
+                    "<property name = 'track_name'>voice</property>"
+                    "<entry out = '946' producer = '2_playlist1' in = '0'/>"
+                    "<blank length = '1'/>"
+                    "</playlist>";
+  XMLDocument doc;
+  doc.Parse(xml);
+  XMLElement *ElementPlaylist = doc.FirstChildElement("playlist");
+  XMLTest("previousSiblingElement() test", true, ElementPlaylist != 0);
+  const XMLElement *pre = ElementPlaylist->PreviousSiblingElement();
+  XMLTest("previousSiblingElement() test", true, pre == 0);
+  const XMLElement *ElementBlank = ElementPlaylist->FirstChildElement("entry")->NextSiblingElement("blank");
+  XMLTest("NextSiblingElement() test", true, ElementBlank != 0);
+  const XMLElement *next = ElementBlank->NextSiblingElement();
+  XMLTest("NextSiblingElement() test", true, next == 0);
+  const XMLElement *ElementEntry = ElementBlank->PreviousSiblingElement("entry");
+  XMLTest("PreviousSiblingElement test", true, ElementEntry != 0);
+}
+
+void test38()
+{
+  const char *xml = "<point> <x>1.2</x> <y>1</y> <z>38</z> <valid>true</valid> </point>";
+  XMLDocument doc;
+  doc.Parse(xml);
+  XMLTest("Parse points", false, doc.Error());
+
+  const XMLElement *pointElement = doc.RootElement();
+
+  {
+    int intValue = 0;
+    XMLError queryResult = pointElement->FirstChildElement("y")->QueryIntText(&intValue);
+    XMLTest("QueryIntText result", XML_SUCCESS, queryResult, false);
+    XMLTest("QueryIntText", 1, intValue, false);
+  }
+
+  {
+    unsigned unsignedValue = 0;
+    XMLError queryResult = pointElement->FirstChildElement("y")->QueryUnsignedText(&unsignedValue);
+    XMLTest("QueryUnsignedText result", XML_SUCCESS, queryResult, false);
+    XMLTest("QueryUnsignedText", (unsigned)1, unsignedValue, false);
+  }
+
+  {
+    float floatValue = 0;
+    XMLError queryResult = pointElement->FirstChildElement("x")->QueryFloatText(&floatValue);
+    XMLTest("QueryFloatText result", XML_SUCCESS, queryResult, false);
+    XMLTest("QueryFloatText", 1.2f, floatValue, false);
+  }
+
+  {
+    double doubleValue = 0;
+    XMLError queryResult = pointElement->FirstChildElement("x")->QueryDoubleText(&doubleValue);
+    XMLTest("QueryDoubleText result", XML_SUCCESS, queryResult, false);
+    XMLTest("QueryDoubleText", 1.2, doubleValue, false);
+  }
+
+  {
+    bool boolValue = false;
+    XMLError queryResult = pointElement->FirstChildElement("valid")->QueryBoolText(&boolValue);
+    XMLTest("QueryBoolText result", XML_SUCCESS, queryResult, false);
+    XMLTest("QueryBoolText", true, boolValue, false);
+  }
+}
+
+void test39()
+{
+  const char *xml = "<element>"
+                    "<a> This \nis &apos;  text  &apos; </a>"
+                    "<b>  This is &apos; text &apos;  \n</b>"
+                    "<c>This  is  &apos;  \n\n text &apos;</c>"
+                    "</element>";
+  XMLDocument doc(true, COLLAPSE_WHITESPACE);
+  doc.Parse(xml);
+  XMLTest("Parse with whitespace collapsing and &apos", false, doc.Error());
+
+  const XMLElement *element = doc.FirstChildElement();
+  for (const XMLElement *parent = element->FirstChildElement();
+       parent;
+       parent = parent->NextSiblingElement())
+  {
+    XMLTest("Whitespace collapse", "This is ' text '", parent->GetText());
+  }
+}
+
+void test40()
+{
+  XMLDocument doc(true, PEDANTIC_WHITESPACE);
+  doc.LoadFile("./data/dream.xml");
+  XMLTest("Load dream.xml with pedantic whitespace mode", false, doc.Error());
+
+  XMLTest("Dream", "xml version=\"1.0\"",
+          doc.FirstChild()->ToDeclaration()->Value());
+  XMLTest("Dream", true, doc.FirstChild()->NextSibling()->ToUnknown() != 0);
+  XMLTest("Dream", "DOCTYPE PLAY SYSTEM \"play.dtd\"",
+          doc.FirstChild()->NextSibling()->ToUnknown()->Value());
+  XMLTest("Dream", "And Robin shall restore amends.",
+          doc.LastChild()->LastChild()->LastChild()->LastChild()->LastChildElement()->GetText());
+}
+
+void test41()
+{
+  const char *xml = "<parent><child>abc</child></parent>";
+  XMLDocument doc;
+  doc.Parse(xml);
+  XMLTest("Parse for printing of sub-element", false, doc.Error());
+  XMLElement *ele = doc.FirstChildElement("parent")->FirstChildElement("child");
+
+  XMLPrinter printer;
+  bool acceptResult = ele->Accept(&printer);
+  XMLTest("Accept of sub-element", true, acceptResult);
+  XMLTest("Printing of sub-element", "<child>abc</child>\n", printer.CStr(), false);
+}
+
+void test42()
+{
+  XMLDocument doc;
+  XMLError error = doc.LoadFile("./data/empty.xml");
+  XMLTest("Loading an empty file", XML_ERROR_EMPTY_DOCUMENT, error);
+  XMLTest("Loading an empty file and ErrorName as string", "XML_ERROR_EMPTY_DOCUMENT", doc.ErrorName());
+  doc.PrintError();
+}
+
+void test43()
+{
+  // Insertion with Removal
+  const char *xml = "<?xml version=\"1.0\" ?>"
+                    "<root>"
+                    "<one>"
+                    "<subtree>"
+                    "<elem>element 1</elem>text<!-- comment -->"
+                    "</subtree>"
+                    "</one>"
+                    "<two/>"
+                    "</root>";
+  const char *xmlInsideTwo = "<?xml version=\"1.0\" ?>"
+                             "<root>"
+                             "<one/>"
+                             "<two>"
+                             "<subtree>"
+                             "<elem>element 1</elem>text<!-- comment -->"
+                             "</subtree>"
+                             "</two>"
+                             "</root>";
+  const char *xmlAfterOne = "<?xml version=\"1.0\" ?>"
+                            "<root>"
+                            "<one/>"
+                            "<subtree>"
+                            "<elem>element 1</elem>text<!-- comment -->"
+                            "</subtree>"
+                            "<two/>"
+                            "</root>";
+  const char *xmlAfterTwo = "<?xml version=\"1.0\" ?>"
+                            "<root>"
+                            "<one/>"
+                            "<two/>"
+                            "<subtree>"
+                            "<elem>element 1</elem>text<!-- comment -->"
+                            "</subtree>"
+                            "</root>";
+
+  XMLDocument doc;
+  doc.Parse(xml);
+  XMLTest("Insertion with removal parse round 1", false, doc.Error());
+  XMLElement *subtree = doc.RootElement()->FirstChildElement("one")->FirstChildElement("subtree");
+  XMLElement *two = doc.RootElement()->FirstChildElement("two");
+  two->InsertFirstChild(subtree);
+  XMLPrinter printer1(0, true);
+  bool acceptResult = doc.Accept(&printer1);
+  XMLTest("Move node from within <one> to <two> - Accept()", true, acceptResult);
+  XMLTest("Move node from within <one> to <two>", xmlInsideTwo, printer1.CStr());
+
+  doc.Parse(xml);
+  XMLTest("Insertion with removal parse round 2", false, doc.Error());
+  subtree = doc.RootElement()->FirstChildElement("one")->FirstChildElement("subtree");
+  two = doc.RootElement()->FirstChildElement("two");
+  doc.RootElement()->InsertAfterChild(two, subtree);
+  XMLPrinter printer2(0, true);
+  acceptResult = doc.Accept(&printer2);
+  XMLTest("Move node from within <one> after <two> - Accept()", true, acceptResult);
+  XMLTest("Move node from within <one> after <two>", xmlAfterTwo, printer2.CStr(), false);
+
+  doc.Parse(xml);
+  XMLTest("Insertion with removal parse round 3", false, doc.Error());
+  XMLNode *one = doc.RootElement()->FirstChildElement("one");
+  subtree = one->FirstChildElement("subtree");
+  doc.RootElement()->InsertAfterChild(one, subtree);
+  XMLPrinter printer3(0, true);
+  acceptResult = doc.Accept(&printer3);
+  XMLTest("Move node from within <one> after <one> - Accept()", true, acceptResult);
+  XMLTest("Move node from within <one> after <one>", xmlAfterOne, printer3.CStr(), false);
+
+  doc.Parse(xml);
+  XMLTest("Insertion with removal parse round 4", false, doc.Error());
+  subtree = doc.RootElement()->FirstChildElement("one")->FirstChildElement("subtree");
+  two = doc.RootElement()->FirstChildElement("two");
+  XMLTest("<two> is the last child at root level", true, two == doc.RootElement()->LastChildElement());
+  doc.RootElement()->InsertEndChild(subtree);
+  XMLPrinter printer4(0, true);
+  acceptResult = doc.Accept(&printer4);
+  XMLTest("Move node from within <one> after <two> - Accept()", true, acceptResult);
+  XMLTest("Move node from within <one> after <two>", xmlAfterTwo, printer4.CStr(), false);
+}
+
+void test44()
+{
+  // Crashing reported via email.
+  const char *xml =
+      "<playlist id='playlist1'>"
+      "<property name='track_name'>voice</property>"
+      "<property name='audio_track'>1</property>"
+      "<entry out = '604' producer = '4_playlist1' in = '0' />"
+      "<blank length = '1' />"
+      "<entry out = '1625' producer = '3_playlist' in = '0' />"
+      "<blank length = '2' />"
+      "<entry out = '946' producer = '2_playlist1' in = '0' />"
+      "<blank length = '1' />"
+      "<entry out = '128' producer = '1_playlist1' in = '0' />"
+      "</playlist>";
+
+  // It's not a good idea to delete elements as you walk the
+  // list. I'm not sure this technically should work; but it's
+  // an interesting test case.
+  XMLDocument doc;
+  XMLError err = doc.Parse(xml);
+  XMLTest("Crash bug parsing", XML_SUCCESS, err);
+
+  XMLElement *playlist = doc.FirstChildElement("playlist");
+  XMLTest("Crash bug parsing", true, playlist != 0);
+
+  {
+    const char *elementName = "entry";
+    XMLElement *entry = playlist->FirstChildElement(elementName);
+    XMLTest("Crash bug parsing", true, entry != 0);
+    while (entry)
+    {
+      XMLElement *todelete = entry;
+      entry = entry->NextSiblingElement(elementName);
+      playlist->DeleteChild(todelete);
+    }
+    entry = playlist->FirstChildElement(elementName);
+    XMLTest("Crash bug parsing", true, entry == 0);
+  }
+  {
+    const char *elementName = "blank";
+    XMLElement *blank = playlist->FirstChildElement(elementName);
+    XMLTest("Crash bug parsing", true, blank != 0);
+    while (blank)
+    {
+      XMLElement *todelete = blank;
+      blank = blank->NextSiblingElement(elementName);
+      playlist->DeleteChild(todelete);
+    }
+    XMLTest("Crash bug parsing", true, blank == 0);
+  }
+
+  tinyxml2::XMLPrinter printer;
+  const bool acceptResult = playlist->Accept(&printer);
+  XMLTest("Crash bug parsing - Accept()", true, acceptResult);
+  printf("%s\n", printer.CStr());
+
+  // No test; it only need to not crash.
+  // Still, wrap it up with a sanity check
+  int nProperty = 0;
+  for (const XMLElement *p = playlist->FirstChildElement("property"); p; p = p->NextSiblingElement("property"))
+  {
+    nProperty++;
+  }
+  XMLTest("Crash bug parsing", 2, nProperty);
+}
+
 int main()
 {
-  // test1();
-  // test2();
-  // test3();
-  // test4();
-  // test5();
-  // test6();
-  // test7();
-  // test8();
-  // test9();
-  // test10();
-  // test11();
-  // test12();
-  // test13();
-  // test14();
-  // test15();
-  // test16();
-  // test17();
-  // test18();
-  // test19();
-  // test20();
-  // test21();
-  // test22();
-  // test23();
-  // test24();
-  // test25();
-  // test26();
-  // test27();
-  // test28();
-  // test29();
-  // test30();
-  // test31();
-  test32();
+  // test35();
+  // test36();
+  // test37();
+  // test38();
+  // test39();
+  // test40();
+  // test41();
+  // test42();
+  // test43();
+  test44();
 }
