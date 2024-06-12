@@ -4,8 +4,10 @@
   "editor.tabSize": 2,
   /// 设置自动格式化代码
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "files.associations": {
-    "ostream": "cpp"
-  }
+    "ostream": "cpp",
+    "fstream": "cpp"
+  },
+  "editor.wordWrap": "on"
 }
