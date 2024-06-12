@@ -1,0 +1,4277 @@
+xml version="1.0" encoding="ISO-8859-1" 
+
+code: s0000001
+en: Athabasca
+fr: Athabasca
+provinceCode: AB
+
+code: s0000002
+en: Clearwater
+fr: Clearwater
+provinceCode: BC
+
+code: s0000003
+en: Valemount
+fr: Valemount
+provinceCode: BC
+
+code: s0000004
+en: Grand Forks
+fr: Grand Forks
+provinceCode: BC
+
+code: s0000005
+en: McBride
+fr: McBride
+provinceCode: BC
+
+code: s0000006
+en: Merritt
+fr: Merritt
+provinceCode: BC
+
+code: s0000007
+en: Masset
+fr: Masset
+provinceCode: BC
+
+code: s0000008
+en: Invermere
+fr: Invermere
+provinceCode: BC
+
+code: s0000009
+en: Dome Creek
+fr: Dome Creek
+provinceCode: BC
+
+code: s0000010
+en: Little Grand Rapids
+fr: Little Grand Rapids
+provinceCode: MB
+
+code: s0000011
+en: Oxford House
+fr: Oxford House
+provinceCode: MB
+
+code: s0000012
+en: Bissett
+fr: Bissett
+provinceCode: MB
+
+code: s0000013
+en: Shamattawa
+fr: Shamattawa
+provinceCode: MB
+
+code: s0000014
+en: York Factory
+fr: York Factory
+provinceCode: MB
+
+code: s0000015
+en: Flin Flon
+fr: Flin Flon
+provinceCode: MB
+
+code: s0000016
+en: Musgrave Harbour
+fr: Musgrave Harbour
+provinceCode: NL
+
+code: s0000017
+en: New-Wes-Valley
+fr: New-Wes-Valley
+provinceCode: NL
+
+code: s0000018
+en: Bay Roberts
+fr: Bay Roberts
+provinceCode: NL
+
+code: s0000019
+en: St. Alban's
+fr: St. Alban's
+provinceCode: NL
+
+code: s0000020
+en: Fourchu Head
+fr: Cap Fourchu
+provinceCode: NS
+
+code: s0000021
+en: North Mountain (Cape Breton)
+fr: North Mountain (Cap-Breton)
+provinceCode: NS
+
+code: s0000022
+en: Marathon
+fr: Marathon
+provinceCode: ON
+
+code: s0000023
+en: Terrace Bay
+fr: Terrace Bay
+provinceCode: ON
+
+code: s0000024
+en: Attawapiskat
+fr: Attawapiskat
+provinceCode: ON
+
+code: s0000025
+en: Gogama
+fr: Gogama
+provinceCode: ON
+
+code: s0000026
+en: Maple Plains
+fr: Maple Plains
+provinceCode: PE
+
+code: s0000027
+en: Murdochville
+fr: Murdochville
+provinceCode: QC
+
+code: s0000028
+en: Escoumins
+fr: Escoumins
+provinceCode: QC
+
+code: s0000029
+en: Saint-Michel-des-Saints
+fr: Saint-Michel-des-Saints
+provinceCode: QC
+
+code: s0000030
+en: Rancheria
+fr: Rancheria
+provinceCode: YT
+
+code: s0000031
+en: Dempster (Highway)
+fr: Dempster (Route)
+provinceCode: YT
+
+code: s0000032
+en: Burgeo
+fr: Burgeo
+provinceCode: NL
+
+code: s0000033
+en: Bouctouche
+fr: Bouctouche
+provinceCode: NB
+
+code: s0000034
+en: Richibucto
+fr: Richibucto
+provinceCode: NB
+
+code: s0000035
+en: Rogersville
+fr: Rogersville
+provinceCode: NB
+
+code: s0000036
+en: Miramichi
+fr: Miramichi
+provinceCode: NB
+
+code: s0000037
+en: Point Escuminac
+fr: Point Escuminac
+provinceCode: NB
+
+code: s0000038
+en: Kouchibouguac
+fr: Kouchibouguac
+provinceCode: NB
+
+code: s0000039
+en: St. Lawrence
+fr: St. Lawrence
+provinceCode: NL
+
+code: s0000040
+en: Parrsboro
+fr: Parrsboro
+provinceCode: NS
+
+code: s0000041
+en: Bonavista
+fr: Bonavista
+provinceCode: NL
+
+code: s0000042
+en: Wreckhouse
+fr: Wreckhouse
+provinceCode: NL
+
+code: s0000043
+en: Edmundston
+fr: Edmundston
+provinceCode: NB
+
+code: s0000044
+en: Beauharnois
+fr: Beauharnois
+provinceCode: QC
+
+code: s0000045
+en: Edmonton
+fr: Edmonton
+provinceCode: AB
+
+code: s0000046
+en: Candiac
+fr: Candiac
+provinceCode: QC
+
+code: s0000047
+en: Calgary
+fr: Calgary
+provinceCode: AB
+
+code: s0000048
+en: La Prairie
+fr: La Prairie
+provinceCode: QC
+
+code: s0000049
+en: Saint-Constant
+fr: Saint-Constant
+provinceCode: QC
+
+code: s0000050
+en: Sainte-Catherine
+fr: Sainte-Catherine
+provinceCode: QC
+
+code: s0000051
+en: Saint-Rémi
+fr: Saint-Rémi
+provinceCode: QC
+
+code: s0000052
+en: Granby
+fr: Granby
+provinceCode: QC
+
+code: s0000053
+en: Cowansville
+fr: Cowansville
+provinceCode: QC
+
+code: s0000054
+en: Victoriaville
+fr: Victoriaville
+provinceCode: QC
+
+code: s0000055
+en: Prévost
+fr: Prévost
+provinceCode: QC
+
+code: s0000056
+en: Sainte-Sophie
+fr: Sainte-Sophie
+provinceCode: QC
+
+code: s0000057
+en: Saint-Lin-Laurentides
+fr: Saint-Lin-Laurentides
+provinceCode: QC
+
+code: s0000058
+en: Saint-Sauveur
+fr: Saint-Sauveur
+provinceCode: QC
+
+code: s0000059
+en: Saint-Hyacinthe
+fr: Saint-Hyacinthe
+provinceCode: QC
+
+code: s0000060
+en: Marieville
+fr: Marieville
+provinceCode: QC
+
+code: s0000061
+en: Rigaud
+fr: Rigaud
+provinceCode: QC
+
+code: s0000062
+en: Saint-Lazare
+fr: Saint-Lazare
+provinceCode: QC
+
+code: s0000063
+en: Farnham
+fr: Farnham
+provinceCode: QC
+
+code: s0000064
+en: Thetford Mines
+fr: Thetford Mines
+provinceCode: QC
+
+code: s0000065
+en: Kugaaruk
+fr: Kugaaruk
+provinceCode: NU
+
+code: s0000066
+en: Highvale
+fr: Highvale
+provinceCode: AB
+
+code: s0000067
+en: Pelican Narrows
+fr: Pelican Narrows
+provinceCode: SK
+
+code: s0000068
+en: Strathmore
+fr: Strathmore
+provinceCode: AB
+
+code: s0000069
+en: Hawkesbury
+fr: Hawkesbury
+provinceCode: ON
+
+code: s0000070
+en: Alexandria
+fr: Alexandria
+provinceCode: ON
+
+code: s0000071
+en: Cornwall
+fr: Cornwall
+provinceCode: ON
+
+code: s0000072
+en: Morrisburg
+fr: Morrisburg
+provinceCode: ON
+
+code: s0000073
+en: Algonquin Park (Brent)
+fr: Parc Algonquin (Brent)
+provinceCode: ON
+
+code: s0000074
+en: Algonquin Park (Lake of Two Rivers)
+fr: Parc Algonquin (Lake of Two Rivers)
+provinceCode: ON
+
+code: s0000075
+en: Oxtongue Lake
+fr: Oxtongue Lake
+provinceCode: ON
+
+code: s0000076
+en: Welland
+fr: Welland
+provinceCode: ON
+
+code: s0000077
+en: Winchester
+fr: Winchester
+provinceCode: ON
+
+code: s0000078
+en: Whistler
+fr: Whistler
+provinceCode: BC
+
+code: s0000079
+en: La Scie
+fr: La Scie
+provinceCode: NL
+
+code: s0000080
+en: Rondeau (Provincial Park)
+fr: Rondeau (Parc provincial)
+provinceCode: ON
+
+code: s0000081
+en: Coronach
+fr: Coronach
+provinceCode: SK
+
+code: s0000082
+en: Placentia
+fr: Placentia
+provinceCode: NL
+
+code: s0000083
+en: Sundre
+fr: Sundre
+provinceCode: AB
+
+code: s0000084
+en: Halifax (Shearwater)
+fr: Halifax (Shearwater)
+provinceCode: NS
+
+code: s0000085
+en: Témiscamingue
+fr: Témiscamingue
+provinceCode: QC
+
+code: s0000086
+en: Indian Head
+fr: Indian Head
+provinceCode: SK
+
+code: s0000087
+en: Fort Qu'Appelle
+fr: Fort Qu'Appelle
+provinceCode: SK
+
+code: s0000088
+en: Killarney
+fr: Killarney
+provinceCode: ON
+
+code: s0000089
+en: New Glasgow
+fr: New Glasgow
+provinceCode: NS
+
+code: s0000090
+en: Caribou
+fr: Caribou
+provinceCode: NS
+
+code: s0000091
+en: Bachelors Island
+fr: Bachelors Island
+provinceCode: MB
+
+code: s0000092
+en: Beaverlodge
+fr: Beaverlodge
+provinceCode: AB
+
+code: s0000093
+en: Brooks
+fr: Brooks
+provinceCode: AB
+
+code: s0000094
+en: Mingan
+fr: Mingan
+provinceCode: QC
+
+code: s0000095
+en: Nipawin
+fr: Nipawin
+provinceCode: SK
+
+code: s0000096
+en: Beaver Island
+fr: Beaver Island
+provinceCode: NS
+
+code: s0000097
+en: Port-Menier
+fr: Port-Menier
+provinceCode: QC
+
+code: s0000098
+en: Salaberry-de-Valleyfield
+fr: Salaberry-de-Valleyfield
+provinceCode: QC
+
+code: s0000099
+en: Huntingdon
+fr: Huntingdon
+provinceCode: QC
+
+code: s0000100
+en: Cartwright
+fr: Cartwright
+provinceCode: NL
+
+code: s0000101
+en: Bloodvein
+fr: Bloodvein
+provinceCode: MB
+
+code: s0000102
+en: Berens River
+fr: Berens River
+provinceCode: MB
+
+code: s0000103
+en: Atikokan
+fr: Atikokan
+provinceCode: ON
+
+code: s0000104
+en: Fort Frances
+fr: Fort Frances
+provinceCode: ON
+
+code: s0000105
+en: Mine Centre
+fr: Mine Centre
+provinceCode: ON
+
+code: s0000106
+en: 100 Mile House
+fr: 100 Mile House
+provinceCode: BC
+
+code: s0000107
+en: Clinton
+fr: Clinton
+provinceCode: BC
+
+code: s0000108
+en: Collingwood
+fr: Collingwood
+provinceCode: ON
+
+code: s0000109
+en: Shelburne
+fr: Shelburne
+provinceCode: NS
+
+code: s0000110
+en: Baccaro Point
+fr: Cap Baccaro
+provinceCode: NS
+
+code: s0000111
+en: Coronation
+fr: Coronation
+provinceCode: AB
+
+code: s0000112
+en: Englee
+fr: Englee
+provinceCode: NL
+
+code: s0000113
+en: Uranium City
+fr: Uranium City
+provinceCode: SK
+
+code: s0000114
+en: Port au Choix
+fr: Port-au-Choix
+provinceCode: NL
+
+code: s0000115
+en: Daniel's Harbour
+fr: Daniel's Harbour
+provinceCode: NL
+
+code: s0000116
+en: Badger
+fr: Badger
+provinceCode: NL
+
+code: s0000117
+en: Buchans
+fr: Buchans
+provinceCode: NL
+
+code: s0000118
+en: Grand Falls-Windsor
+fr: Grand Falls-Windsor
+provinceCode: NL
+
+code: s0000119
+en: Willow Creek (Provincial Park)
+fr: Willow Creek (Parc provincial)
+provinceCode: AB
+
+code: s0000120
+en: Claresholm
+fr: Claresholm
+provinceCode: AB
+
+code: s0000121
+en: Chevery
+fr: Chevery
+provinceCode: QC
+
+code: s0000122
+en: Twillingate
+fr: Twillingate
+provinceCode: NL
+
+code: s0000123
+en: Manicouagan
+fr: Manicouagan
+provinceCode: QC
+
+code: s0000124
+en: La Tuque
+fr: La Tuque
+provinceCode: QC
+
+code: s0000125
+en: Mauricie
+fr: Mauricie
+provinceCode: QC
+
+code: s0000126
+en: Calgary (Olympic Park)
+fr: Calgary (Parc Olympique)
+provinceCode: AB
+
+code: s0000127
+en: Upsala
+fr: Upsala
+provinceCode: ON
+
+code: s0000128
+en: St. Anthony
+fr: St. Anthony
+provinceCode: NL
+
+code: s0000129
+en: Drumheller
+fr: Drumheller
+provinceCode: AB
+
+code: s0000130
+en: Pinawa
+fr: Pinawa
+provinceCode: MB
+
+code: s0000131
+en: Whiteshell
+fr: Whiteshell
+provinceCode: MB
+
+code: s0000132
+en: Estevan Point
+fr: Estevan Point
+provinceCode: BC
+
+code: s0000133
+en: Shaunavon
+fr: Shaunavon
+provinceCode: SK
+
+code: s0000134
+en: Eastend
+fr: Eastend
+provinceCode: SK
+
+code: s0000135
+en: Virden
+fr: Virden
+provinceCode: MB
+
+code: s0000136
+en: Melita
+fr: Melita
+provinceCode: MB
+
+code: s0000137
+en: Turtle Mountain (Provincial Park)
+fr: Turtle Mountain (Parc provincial)
+provinceCode: MB
+
+code: s0000138
+en: East Point
+fr: East Point
+provinceCode: PE
+
+code: s0000139
+en: Swan River
+fr: Swan River
+provinceCode: MB
+
+code: s0000140
+en: Eureka
+fr: Eureka
+provinceCode: NU
+
+code: s0000141
+en: Vancouver
+fr: Vancouver
+provinceCode: BC
+
+code: s0000142
+en: L'Assomption
+fr: L'Assomption
+provinceCode: QC
+
+code: s0000143
+en: Berthierville
+fr: Berthierville
+provinceCode: QC
+
+code: s0000144
+en: Contrecoeur
+fr: Contrecoeur
+provinceCode: QC
+
+code: s0000145
+en: Mascouche
+fr: Mascouche
+provinceCode: QC
+
+code: s0000146
+en: Prince George
+fr: Prince George
+provinceCode: BC
+
+code: s0000147
+en: Sorel-Tracy
+fr: Sorel-Tracy
+provinceCode: QC
+
+code: s0000148
+en: Tracy
+fr: Tracy
+provinceCode: QC
+
+code: s0000149
+en: Le Gardeur
+fr: Le Gardeur
+provinceCode: QC
+
+code: s0000150
+en: Morris
+fr: Morris
+provinceCode: MB
+
+code: s0000151
+en: Steinbach
+fr: Steinbach
+provinceCode: MB
+
+code: s0000152
+en: Dominion City
+fr: Dominion City
+provinceCode: MB
+
+code: s0000153
+en: Emerson
+fr: Emerson
+provinceCode: MB
+
+code: s0000154
+en: Vita
+fr: Vita
+provinceCode: MB
+
+code: s0000155
+en: Gulf Islands (Southern)
+fr: Gulf Islands (Secteur sud)
+provinceCode: BC
+
+code: s0000156
+en: Elk Island (National Park)
+fr: Elk Island (Parc national)
+provinceCode: AB
+
+code: s0000157
+en: Tisdale
+fr: Tisdale
+provinceCode: SK
+
+code: s0000158
+en: Melfort
+fr: Melfort
+provinceCode: SK
+
+code: s0000159
+en: Cardston
+fr: Cardston
+provinceCode: AB
+
+code: s0000160
+en: Snow Lake
+fr: Snow Lake
+provinceCode: MB
+
+code: s0000161
+en: Pukatawagan
+fr: Pukatawagan
+provinceCode: MB
+
+code: s0000162
+en: Nain
+fr: Nain
+provinceCode: NL
+
+code: s0000163
+en: Sutton
+fr: Sutton
+provinceCode: QC
+
+code: s0000164
+en: Colville Lake
+fr: Colville Lake
+provinceCode: NT
+
+code: s0000165
+en: Goderich
+fr: Goderich
+provinceCode: ON
+
+code: s0000166
+en: Kincardine
+fr: Kincardine
+provinceCode: ON
+
+code: s0000167
+en: Garden Creek
+fr: Garden Creek
+provinceCode: AB
+
+code: s0000168
+en: Brockville
+fr: Brockville
+provinceCode: ON
+
+code: s0000169
+en: Gananoque
+fr: Gananoque
+provinceCode: ON
+
+code: s0000170
+en: Waterton Park
+fr: Parc Waterton
+provinceCode: AB
+
+code: s0000171
+en: Altona
+fr: Altona
+provinceCode: MB
+
+code: s0000172
+en: Gretna
+fr: Gretna
+provinceCode: MB
+
+code: s0000173
+en: Pemberton
+fr: Pemberton
+provinceCode: BC
+
+code: s0000174
+en: Îles-de-la-Madeleine
+fr: Îles-de-la-Madeleine
+provinceCode: QC
+
+code: s0000175
+en: Sparwood
+fr: Sparwood
+provinceCode: BC
+
+code: s0000176
+en: Esther
+fr: Esther
+provinceCode: AB
+
+code: s0000177
+en: Grise Fiord
+fr: Grise Fiord
+provinceCode: NU
+
+code: s0000178
+en: Hunters Point
+fr: Hunters Point
+provinceCode: MB
+
+code: s0000179
+en: Three Hills
+fr: Three Hills
+provinceCode: AB
+
+code: s0000180
+en: Varennes
+fr: Varennes
+provinceCode: QC
+
+code: s0000181
+en: Hopedale
+fr: Hopedale
+provinceCode: NL
+
+code: s0000182
+en: Donnacona
+fr: Donnacona
+provinceCode: QC
+
+code: s0000183
+en: Haines Junction
+fr: Haines Junction
+provinceCode: YT
+
+code: s0000185
+en: Beauceville
+fr: Beauceville
+provinceCode: QC
+
+code: s0000186
+en: Lac-Mégantic
+fr: Lac-Mégantic
+provinceCode: QC
+
+code: s0000187
+en: Saint-Georges
+fr: Saint-Georges
+provinceCode: QC
+
+code: s0000188
+en: Fort Providence
+fr: Fort Providence
+provinceCode: NT
+
+code: s0000189
+en: Pine Falls
+fr: Pine Falls
+provinceCode: MB
+
+code: s0000190
+en: Victoria Beach
+fr: Victoria Beach
+provinceCode: MB
+
+code: s0000191
+en: Grand Beach
+fr: Grand Beach
+provinceCode: MB
+
+code: s0000192
+en: Broadview
+fr: Broadview
+provinceCode: SK
+
+code: s0000193
+en: Winnipeg
+fr: Winnipeg
+provinceCode: MB
+
+code: s0000194
+en: Charlevoix
+fr: Charlevoix
+provinceCode: QC
+
+code: s0000195
+en: Watrous
+fr: Watrous
+provinceCode: SK
+
+code: s0000196
+en: Humboldt
+fr: Humboldt
+provinceCode: SK
+
+code: s0000197
+en: Alma
+fr: Alma
+provinceCode: QC
+
+code: s0000198
+en: Mount Carleton (Provincial Park)
+fr: Mont Carleton (Parc provincial)
+provinceCode: NB
+
+code: s0000199
+en: Saint-Quentin
+fr: Saint-Quentin
+provinceCode: NB
+
+code: s0000200
+en: St. Leonard
+fr: St. Leonard
+provinceCode: NB
+
+code: s0000201
+en: Grand Falls
+fr: Grand-Sault
+provinceCode: NB
+
+code: s0000202
+en: Saint-Jean-sur-Richelieu
+fr: Saint-Jean-sur-Richelieu
+provinceCode: QC
+
+code: s0000203
+en: Saint-Luc
+fr: Saint-Luc
+provinceCode: QC
+
+code: s0000204
+en: Vanier
+fr: Vanier
+provinceCode: QC
+
+code: s0000205
+en: Bernières
+fr: Bernières
+provinceCode: QC
+
+code: s0000206
+en: Ennadai
+fr: Ennadai
+provinceCode: NU
+
+code: s0000207
+en: Grand Rapids
+fr: Grand Rapids
+provinceCode: MB
+
+code: s0000208
+en: Southend Reindeer
+fr: Southend Reindeer
+provinceCode: SK
+
+code: s0000209
+en: Assiniboia
+fr: Assiniboia
+provinceCode: SK
+
+code: s0000210
+en: Fort Liard
+fr: Fort Liard
+provinceCode: NT
+
+code: s0000211
+en: Saguenay
+fr: Saguenay
+provinceCode: QC
+
+code: s0000212
+en: Creston
+fr: Creston
+provinceCode: BC
+
+code: s0000213
+en: Mont-Tremblant
+fr: Mont-Tremblant
+provinceCode: QC
+
+code: s0000214
+en: Sainte-Agathe
+fr: Sainte-Agathe
+provinceCode: QC
+
+code: s0000216
+en: Vernon
+fr: Vernon
+provinceCode: BC
+
+code: s0000217
+en: Hinton
+fr: Hinton
+provinceCode: AB
+
+code: s0000218
+en: Jasper
+fr: Jasper
+provinceCode: AB
+
+code: s0000219
+en: Leader
+fr: Leader
+provinceCode: SK
+
+code: s0000220
+en: Marble Mountain
+fr: Marble Mountain
+provinceCode: NL
+
+code: s0000221
+en: Corner Brook
+fr: Corner Brook
+provinceCode: NL
+
+code: s0000222
+en: Lillooet
+fr: Lillooet
+provinceCode: BC
+
+code: s0000223
+en: Kejimkujik (National Park)
+fr: Kejimkujik (Parc national)
+provinceCode: NS
+
+code: s0000224
+en: Malahat
+fr: Malahat
+provinceCode: BC
+
+code: s0000225
+en: Rockglen
+fr: Rockglen
+provinceCode: SK
+
+code: s0000226
+en: Hope Slide
+fr: Hope Slide
+provinceCode: BC
+
+code: s0000227
+en: Dease Lake
+fr: Dease Lake
+provinceCode: BC
+
+code: s0000228
+en: Cassiar
+fr: Cassiar
+provinceCode: BC
+
+code: s0000229
+en: Lac La Biche
+fr: Lac La Biche
+provinceCode: AB
+
+code: s0000230
+en: Lucky Lake
+fr: Lucky Lake
+provinceCode: SK
+
+code: s0000231
+en: Ogoki
+fr: Ogoki
+provinceCode: ON
+
+code: s0000232
+en: Webequie
+fr: Webequie
+provinceCode: ON
+
+code: s0000233
+en: Lansdowne House
+fr: Lansdowne House
+provinceCode: ON
+
+code: s0000234
+en: Gonzales Point
+fr: Gonzales Point
+provinceCode: BC
+
+code: s0000235
+en: Wingham
+fr: Wingham
+provinceCode: ON
+
+code: s0000236
+en: Walkerton
+fr: Walkerton
+provinceCode: ON
+
+code: s0000237
+en: Dundalk
+fr: Dundalk
+provinceCode: ON
+
+code: s0000238
+en: North Perth
+fr: North Perth
+provinceCode: ON
+
+code: s0000239
+en: Shelburne
+fr: Shelburne
+provinceCode: ON
+
+code: s0000240
+en: Mount Forest
+fr: Mount Forest
+provinceCode: ON
+
+code: s0000241
+en: Waskesiu Lake
+fr: Waskesiu Lake
+provinceCode: SK
+
+code: s0000242
+en: Lytton
+fr: Lytton
+provinceCode: BC
+
+code: s0000243
+en: Miscou Island
+fr: Miscou Island
+provinceCode: NB
+
+code: s0000244
+en: Maniwaki
+fr: Maniwaki
+provinceCode: QC
+
+code: s0000245
+en: La Vérendrye (Réserve faunique)
+fr: La Vérendrye (Réserve faunique)
+provinceCode: QC
+
+code: s0000246
+en: Mont-Laurier
+fr: Mont-Laurier
+provinceCode: QC
+
+code: s0000247
+en: Pitt Meadows
+fr: Pitt Meadows
+provinceCode: BC
+
+code: s0000248
+en: Maple Creek
+fr: Maple Creek
+provinceCode: SK
+
+code: s0000249
+en: Whati
+fr: Whati
+provinceCode: NT
+
+code: s0000250
+en: Fredericton
+fr: Fredericton
+provinceCode: NB
+
+code: s0000251
+en: Cobourg
+fr: Cobourg
+provinceCode: ON
+
+code: s0000252
+en: North Cape
+fr: North Cape
+provinceCode: PE
+
+code: s0000253
+en: Rivière-du-Loup
+fr: Rivière-du-Loup
+provinceCode: QC
+
+code: s0000254
+en: Trois-Pistoles
+fr: Trois-Pistoles
+provinceCode: QC
+
+code: s0000255
+en: Temiscouata
+fr: Témiscouata
+provinceCode: QC
+
+code: s0000256
+en: Deerwood
+fr: Deerwood
+provinceCode: MB
+
+code: s0000257
+en: Carman
+fr: Carman
+provinceCode: MB
+
+code: s0000258
+en: Nelson
+fr: Nelson
+provinceCode: BC
+
+code: s0000259
+en: Nakusp
+fr: Nakusp
+provinceCode: BC
+
+code: s0000260
+en: Nicolet
+fr: Nicolet
+provinceCode: QC
+
+code: s0000261
+en: Drummondville
+fr: Drummondville
+provinceCode: QC
+
+code: s0000262
+en: Saint-Nicéphore
+fr: Saint-Nicéphore
+provinceCode: QC
+
+code: s0000263
+en: Kananaskis (Nakiska Ridgetop)
+fr: Kananaskis (Nakiska Ridgetop)
+provinceCode: AB
+
+code: s0000264
+en: North East Margaree
+fr: North East Margaree
+provinceCode: NS
+
+code: s0000265
+en: Baddeck
+fr: Baddeck
+provinceCode: NS
+
+code: s0000266
+en: Hearst
+fr: Hearst
+provinceCode: ON
+
+code: s0000267
+en: Hornepayne
+fr: Hornepayne
+provinceCode: ON
+
+code: s0000268
+en: New Carlisle
+fr: New Carlisle
+provinceCode: QC
+
+code: s0000269
+en: Bonaventure
+fr: Bonaventure
+provinceCode: QC
+
+code: s0000270
+en: Dolbeau-Mistassini
+fr: Dolbeau-Mistassini
+provinceCode: QC
+
+code: s0000272
+en: Onefour
+fr: Onefour
+provinceCode: AB
+
+code: s0000273
+en: Oak Point
+fr: Oak Point
+provinceCode: MB
+
+code: s0000274
+en: Elbow
+fr: Elbow
+provinceCode: SK
+
+code: s0000275
+en: Dawson
+fr: Dawson
+provinceCode: YT
+
+code: s0000276
+en: McCreary
+fr: McCreary
+provinceCode: MB
+
+code: s0000277
+en: Breton
+fr: Breton
+provinceCode: AB
+
+code: s0000278
+en: Wynyard
+fr: Wynyard
+provinceCode: SK
+
+code: s0000279
+en: Hendrickson Creek
+fr: Hendrickson Creek
+provinceCode: AB
+
+code: s0000280
+en: St. John's
+fr: St. John's
+provinceCode: NL
+
+code: s0000281
+en: Midland
+fr: Midland
+provinceCode: ON
+
+code: s0000282
+en: Fort Erie
+fr: Fort Erie
+provinceCode: ON
+
+code: s0000283
+en: Port Colborne
+fr: Port Colborne
+provinceCode: ON
+
+code: s0000284
+en: Laurentides (Réserve faunique)
+fr: Laurentides (Réserve faunique)
+provinceCode: QC
+
+code: s0000285
+en: Point Lepreau
+fr: Point Lepreau
+provinceCode: NB
+
+code: s0000286
+en: Esquimalt
+fr: Esquimalt
+provinceCode: BC
+
+code: s0000287
+en: Parent
+fr: Parent
+provinceCode: QC
+
+code: s0000288
+en: Gouin (Réservoir)
+fr: Gouin (Réservoir)
+provinceCode: QC
+
+code: s0000289
+en: Pilot Mound
+fr: Pilot Mound
+provinceCode: MB
+
+code: s0000290
+en: Terrebonne
+fr: Terrebonne
+provinceCode: QC
+
+code: s0000291
+en: Princeton
+fr: Princeton
+provinceCode: BC
+
+code: s0000292
+en: Puntzi Mountain
+fr: Puntzi Mountain
+provinceCode: BC
+
+code: s0000293
+en: Burns Lake
+fr: Burns Lake
+provinceCode: BC
+
+code: s0000294
+en: Port Alberni
+fr: Port Alberni
+provinceCode: BC
+
+code: s0000295
+en: Tadoussac
+fr: Tadoussac
+provinceCode: QC
+
+code: s0000296
+en: Coaticook
+fr: Coaticook
+provinceCode: QC
+
+code: s0000297
+en: Lacombe
+fr: Lacombe
+provinceCode: AB
+
+code: s0000298
+en: Cape Race
+fr: Cape Race
+provinceCode: NL
+
+code: s0000299
+en: Red Earth Creek
+fr: Red Earth Creek
+provinceCode: AB
+
+code: s0000300
+en: Rosetown
+fr: Rosetown
+provinceCode: SK
+
+code: s0000301
+en: Bancroft
+fr: Bancroft
+provinceCode: ON
+
+code: s0000302
+en: Barry's Bay
+fr: Barry's Bay
+provinceCode: ON
+
+code: s0000303
+en: Haliburton
+fr: Haliburton
+provinceCode: ON
+
+code: s0000304
+en: Apsley
+fr: Apsley
+provinceCode: ON
+
+code: s0000305
+en: Kaladar
+fr: Kaladar
+provinceCode: ON
+
+code: s0000306
+en: Rocky Mountain House
+fr: Rocky Mountain House
+provinceCode: AB
+
+code: s0000307
+en: St. Peter's
+fr: St. Peter's
+provinceCode: NS
+
+code: s0000308
+en: Hart Island
+fr: Hart Island
+provinceCode: NS
+
+code: s0000309
+en: Rock River
+fr: Rock River
+provinceCode: YT
+
+code: s0000310
+en: Crowsnest
+fr: Crowsnest
+provinceCode: AB
+
+code: s0000311
+en: Camrose
+fr: Camrose
+provinceCode: AB
+
+code: s0000312
+en: Wetaskiwin
+fr: Wetaskiwin
+provinceCode: AB
+
+code: s0000313
+en: Milk River
+fr: Milk River
+provinceCode: AB
+
+code: s0000314
+en: Percé
+fr: Percé
+provinceCode: QC
+
+code: s0000315
+en: Chandler
+fr: Chandler
+provinceCode: QC
+
+code: s0000316
+en: Gibsons
+fr: Gibsons
+provinceCode: BC
+
+code: s0000317
+en: Sechelt
+fr: Sechelt
+provinceCode: BC
+
+code: s0000318
+en: Halifax
+fr: Halifax
+provinceCode: NS
+
+code: s0000319
+en: Grande-Vallée
+fr: Grande-Vallée
+provinceCode: QC
+
+code: s0000320
+en: Cap Chat
+fr: Cap Chat
+provinceCode: QC
+
+code: s0000321
+en: Gaspésie (Parc national)
+fr: Gaspésie (Parc national)
+provinceCode: QC
+
+code: s0000322
+en: Sainte-Anne-Des-Monts
+fr: Sainte-Anne-Des-Monts
+provinceCode: QC
+
+code: s0000323
+en: Squamish
+fr: Squamish
+provinceCode: BC
+
+code: s0000324
+en: Salmon Arm
+fr: Salmon Arm
+provinceCode: BC
+
+code: s0000325
+en: Stratford
+fr: Stratford
+provinceCode: ON
+
+code: s0000326
+en: London
+fr: London
+provinceCode: ON
+
+code: s0000327
+en: Woodstock
+fr: Woodstock
+provinceCode: ON
+
+code: s0000328
+en: Strathroy
+fr: Strathroy
+provinceCode: ON
+
+code: s0000329
+en: St. Thomas
+fr: St. Thomas
+provinceCode: ON
+
+code: s0000330
+en: Spiritwood
+fr: Spiritwood
+provinceCode: SK
+
+code: s0000331
+en: Saint Andrews
+fr: Saint Andrews
+provinceCode: NB
+
+code: s0000332
+en: St. Stephen
+fr: St. Stephen
+provinceCode: NB
+
+code: s0000333
+en: La Malbaie
+fr: La Malbaie
+provinceCode: QC
+
+code: s0000334
+en: Montmagny
+fr: Montmagny
+provinceCode: QC
+
+code: s0000335
+en: Kamouraska
+fr: Kamouraska
+provinceCode: QC
+
+code: s0000336
+en: L'Islet
+fr: L'Islet
+provinceCode: QC
+
+code: s0000337
+en: Sprague
+fr: Sprague
+provinceCode: MB
+
+code: s0000338
+en: Sachs Harbour
+fr: Sachs Harbour
+provinceCode: NT
+
+code: s0000339
+en: Fisher Branch
+fr: Fisher Branch
+provinceCode: MB
+
+code: s0000340
+en: Sambaa K'e
+fr: Sambaa K'e
+provinceCode: NT
+
+code: s0000341
+en: Tetsa River (Provincial Park)
+fr: Tetsa River (Parc provincial)
+provinceCode: BC
+
+code: s0000342
+en: Baie-Saint-Paul
+fr: Baie-Saint-Paul
+provinceCode: QC
+
+code: s0000343
+en: Biggar
+fr: Biggar
+provinceCode: SK
+
+code: s0000344
+en: Scott
+fr: Scott
+provinceCode: SK
+
+code: s0000345
+en: Magog
+fr: Magog
+provinceCode: QC
+
+code: s0000346
+en: Trois-Rivières
+fr: Trois-Rivières
+provinceCode: QC
+
+code: s0000347
+en: Bécancour
+fr: Bécancour
+provinceCode: QC
+
+code: s0000348
+en: Louiseville
+fr: Louiseville
+provinceCode: QC
+
+code: s0000349
+en: Faro
+fr: Faro
+provinceCode: YT
+
+code: s0000350
+en: Ross River
+fr: Ross River
+provinceCode: YT
+
+code: s0000351
+en: Summerland
+fr: Summerland
+provinceCode: BC
+
+code: s0000352
+en: Shoal Lake
+fr: Shoal Lake
+provinceCode: MB
+
+code: s0000353
+en: Rouyn-Noranda
+fr: Rouyn-Noranda
+provinceCode: QC
+
+code: s0000354
+en: La Sarre
+fr: La Sarre
+provinceCode: QC
+
+code: s0000355
+en: Swift Current
+fr: Swift Current
+provinceCode: SK
+
+code: s0000356
+en: Vegreville
+fr: Vegreville
+provinceCode: AB
+
+code: s0000357
+en: Val Marie
+fr: Val Marie
+provinceCode: SK
+
+code: s0000358
+en: Vauxhall
+fr: Vauxhall
+provinceCode: AB
+
+code: s0000359
+en: Taber
+fr: Taber
+provinceCode: AB
+
+code: s0000360
+en: Cypress Hills (Provincial Park)
+fr: Cypress Hills (Parc provincial)
+provinceCode: SK
+
+code: s0000361
+en: Deux-Montagnes
+fr: Deux-Montagnes
+provinceCode: QC
+
+code: s0000362
+en: Vaudreuil-Dorion
+fr: Vaudreuil-Dorion
+provinceCode: QC
+
+code: s0000363
+en: Pincourt
+fr: Pincourt
+provinceCode: QC
+
+code: s0000364
+en: Digby
+fr: Digby
+provinceCode: NS
+
+code: s0000365
+en: Brier Island
+fr: Brier Island
+provinceCode: NS
+
+code: s0000366
+en: Yellowknife
+fr: Yellowknife
+provinceCode: NT
+
+code: s0000367
+en: Oakville
+fr: Oakville
+provinceCode: ON
+
+code: s0000368
+en: Burlington
+fr: Burlington
+provinceCode: ON
+
+code: s0000369
+en: Collins Bay
+fr: Collins Bay
+provinceCode: SK
+
+code: s0000370
+en: Western Head
+fr: Western Head
+provinceCode: NS
+
+code: s0000371
+en: Liverpool
+fr: Liverpool
+provinceCode: NS
+
+code: s0000372
+en: Weyburn
+fr: Weyburn
+provinceCode: SK
+
+code: s0000373
+en: White Rock
+fr: White Rock
+provinceCode: BC
+
+code: s0000374
+en: Peawanuck
+fr: Peawanuck
+provinceCode: ON
+
+code: s0000375
+en: Wasagaming
+fr: Wasagaming
+provinceCode: MB
+
+code: s0000376
+en: Muncho Lake
+fr: Muncho Lake
+provinceCode: BC
+
+code: s0000377
+en: Liard River
+fr: Liard River
+provinceCode: BC
+
+code: s0000378
+en: Poplar River
+fr: Poplar River
+provinceCode: MB
+
+code: s0000379
+en: Bow Valley (Provincial Park)
+fr: Bow Valley (Parc provincial)
+provinceCode: AB
+
+code: s0000380
+en: Roblin
+fr: Roblin
+provinceCode: MB
+
+code: s0000381
+en: Last Mountain Lake (Sanctuary)
+fr: Last Mountain Lake (Sanctuaire)
+provinceCode: SK
+
+code: s0000382
+en: Bow Island
+fr: Bow Island
+provinceCode: AB
+
+code: s0000383
+en: High River
+fr: High River
+provinceCode: AB
+
+code: s0000384
+en: Stavely
+fr: Stavely
+provinceCode: AB
+
+code: s0000385
+en: Tracadie-Sheila
+fr: Tracadie-Sheila
+provinceCode: NB
+
+code: s0000386
+en: Bas-Caraquet
+fr: Bas-Caraquet
+provinceCode: NB
+
+code: s0000387
+en: Outlook
+fr: Outlook
+provinceCode: SK
+
+code: s0000388
+en: Gameti
+fr: Gameti
+provinceCode: NT
+
+code: s0000389
+en: Indin River
+fr: Indin River
+provinceCode: NT
+
+code: s0000390
+en: Victoria (University of)
+fr: Victoria (Université de)
+provinceCode: BC
+
+code: s0000391
+en: Kootenay (National Park)
+fr: Kootenay (Parc national)
+provinceCode: BC
+
+code: s0000392
+en: Yoho (National Park)
+fr: Yoho (Parc national)
+provinceCode: BC
+
+code: s0000393
+en: Rimouski
+fr: Rimouski
+provinceCode: QC
+
+code: s0000394
+en: Iqaluit
+fr: Iqaluit
+provinceCode: NU
+
+code: s0000395
+en: Gull Bay
+fr: Gull Bay
+provinceCode: ON
+
+code: s0000396
+en: Rock Creek
+fr: Rock Creek
+provinceCode: BC
+
+code: s0000397
+en: Osoyoos
+fr: Osoyoos
+provinceCode: BC
+
+code: s0000398
+en: Chilliwack
+fr: Chilliwack
+provinceCode: BC
+
+code: s0000399
+en: Agassiz
+fr: Agassiz
+provinceCode: BC
+
+code: s0000400
+en: Channel-Port aux Basques
+fr: Channel-Port aux Basques
+provinceCode: NL
+
+code: s0000401
+en: Carberry
+fr: Carberry
+provinceCode: MB
+
+code: s0000402
+en: Shilo
+fr: Shilo
+provinceCode: MB
+
+code: s0000403
+en: Canmore
+fr: Canmore
+provinceCode: AB
+
+code: s0000404
+en: Banff
+fr: Banff
+provinceCode: AB
+
+code: s0000405
+en: Grand Étang
+fr: Grand Étang
+provinceCode: NS
+
+code: s0000406
+en: Amqui
+fr: Amqui
+provinceCode: QC
+
+code: s0000407
+en: Matapedia
+fr: Matapédia
+provinceCode: QC
+
+code: s0000408
+en: Vallée de la Matapédia
+fr: Vallée de la Matapédia
+provinceCode: QC
+
+code: s0000409
+en: Atlin
+fr: Atlin
+provinceCode: BC
+
+code: s0000410
+en: Teslin
+fr: Teslin
+provinceCode: YT
+
+code: s0000411
+en: Thunder Bay
+fr: Thunder Bay
+provinceCode: ON
+
+code: s0000412
+en: Arctic Bay
+fr: Arctic Bay
+provinceCode: NU
+
+code: s0000413
+en: Barrhead
+fr: Barrhead
+provinceCode: AB
+
+code: s0000414
+en: Orillia
+fr: Orillia
+provinceCode: ON
+
+code: s0000415
+en: Barrie
+fr: Barrie
+provinceCode: ON
+
+code: s0000416
+en: Lévis
+fr: Lévis
+provinceCode: QC
+
+code: s0000417
+en: Tadoule Lake
+fr: Tadoule Lake
+provinceCode: MB
+
+code: s0000418
+en: Greenstone (Beardmore)
+fr: Greenstone (Beardmore)
+provinceCode: ON
+
+code: s0000419
+en: Nipigon
+fr: Nipigon
+provinceCode: ON
+
+code: s0000420
+en: Chéticamp
+fr: Chéticamp
+provinceCode: NS
+
+code: s0000421
+en: Carmacks
+fr: Carmacks
+provinceCode: YT
+
+code: s0000422
+en: Tobermory
+fr: Tobermory
+provinceCode: ON
+
+code: s0000423
+en: Deline
+fr: Deline
+provinceCode: NT
+
+code: s0000424
+en: Simcoe
+fr: Simcoe
+provinceCode: ON
+
+code: s0000425
+en: Tillsonburg
+fr: Tillsonburg
+provinceCode: ON
+
+code: s0000426
+en: Norfolk
+fr: Norfolk
+provinceCode: ON
+
+code: s0000427
+en: Westlock
+fr: Westlock
+provinceCode: AB
+
+code: s0000428
+en: Ear Falls
+fr: Ear Falls
+provinceCode: ON
+
+code: s0000429
+en: New Tecumseth
+fr: New Tecumseth
+provinceCode: ON
+
+code: s0000430
+en: Ottawa (Kanata - Orléans)
+fr: Ottawa (Kanata - Orléans)
+provinceCode: ON
+
+code: s0000431
+en: Leamington
+fr: Leamington
+provinceCode: ON
+
+code: s0000432
+en: Ulukhaktok
+fr: Ulukhaktok
+provinceCode: NT
+
+code: s0000433
+en: Ingonish
+fr: Ingonish
+provinceCode: NS
+
+code: s0000434
+en: Smiths Falls
+fr: Smiths Falls
+provinceCode: ON
+
+code: s0000435
+en: Sharbot Lake
+fr: Sharbot Lake
+provinceCode: ON
+
+code: s0000436
+en: Kemptville
+fr: Kemptville
+provinceCode: ON
+
+code: s0000437
+en: Kirkland Lake
+fr: Kirkland Lake
+provinceCode: ON
+
+code: s0000438
+en: Windsor
+fr: Windsor
+provinceCode: NS
+
+code: s0000439
+en: Kentville
+fr: Kentville
+provinceCode: NS
+
+code: s0000440
+en: Lunenburg
+fr: Lunenburg
+provinceCode: NS
+
+code: s0000441
+en: Bridgewater
+fr: Bridgewater
+provinceCode: NS
+
+code: s0000442
+en: Wekweeti
+fr: Wekweeti
+provinceCode: NT
+
+code: s0000443
+en: Lutselke
+fr: Lutselke
+provinceCode: NT
+
+code: s0000444
+en: Morden
+fr: Morden
+provinceCode: MB
+
+code: s0000445
+en: Winkler
+fr: Winkler
+provinceCode: MB
+
+code: s0000446
+en: Sheet Harbour
+fr: Sheet Harbour
+provinceCode: NS
+
+code: s0000447
+en: Malay Falls
+fr: Malay Falls
+provinceCode: NS
+
+code: s0000448
+en: Nordegg
+fr: Nordegg
+provinceCode: AB
+
+code: s0000449
+en: Sackville
+fr: Sackville
+provinceCode: NB
+
+code: s0000450
+en: Amherst
+fr: Amherst
+provinceCode: NS
+
+code: s0000451
+en: Parry Sound
+fr: Parry Sound
+provinceCode: ON
+
+code: s0000452
+en: Dunchurch
+fr: Dunchurch
+provinceCode: ON
+
+code: s0000453
+en: Stony Plain
+fr: Stony Plain
+provinceCode: AB
+
+code: s0000454
+en: Chatham-Kent
+fr: Chatham-Kent
+provinceCode: ON
+
+code: s0000455
+en: Rodney
+fr: Rodney
+provinceCode: ON
+
+code: s0000456
+en: Rocky Harbour
+fr: Rocky Harbour
+provinceCode: NL
+
+code: s0000457
+en: Gros Morne
+fr: Gros Morne
+provinceCode: NL
+
+code: s0000458
+en: Toronto
+fr: Toronto
+provinceCode: ON
+
+code: s0000459
+en: Lanaudière
+fr: Lanaudière
+provinceCode: QC
+
+code: s0000460
+en: Port Hawkesbury
+fr: Port Hawkesbury
+provinceCode: NS
+
+code: s0000461
+en: Tracadie
+fr: Tracadie
+provinceCode: NS
+
+code: s0000462
+en: Antigonish
+fr: Antigonish
+provinceCode: NS
+
+code: s0000463
+en: Cape George
+fr: Cape George
+provinceCode: NS
+
+code: s0000464
+en: Guysborough
+fr: Guysborough
+provinceCode: NS
+
+code: s0000465
+en: Tatlayoko Lake
+fr: Tatlayoko Lake
+provinceCode: BC
+
+code: s0000466
+en: Clarenville
+fr: Clarenville
+provinceCode: NL
+
+code: s0000467
+en: Terra Nova (National Park)
+fr: Terra Nova (Parc national)
+provinceCode: NL
+
+code: s0000468
+en: Drayton Valley
+fr: Drayton Valley
+provinceCode: AB
+
+code: s0000469
+en: Vineland
+fr: Vineland
+provinceCode: ON
+
+code: s0000470
+en: Lincoln
+fr: Lincoln
+provinceCode: ON
+
+code: s0000471
+en: Trail
+fr: Trail
+provinceCode: BC
+
+code: s0000472
+en: Winnipeg (The Forks)
+fr: Winnipeg (La Fourche)
+provinceCode: MB
+
+code: s0000473
+en: Winterland
+fr: Winterland
+provinceCode: NL
+
+code: s0000474
+en: Marystown
+fr: Marystown
+provinceCode: NL
+
+code: s0000475
+en: Grand Bank
+fr: Grand Bank
+provinceCode: NL
+
+code: s0000476
+en: Nahanni Butte
+fr: Nahanni Butte
+provinceCode: NT
+
+code: s0000477
+en: Whitecourt
+fr: Whitecourt
+provinceCode: AB
+
+code: s0000478
+en: La Grande-Quatre
+fr: La Grande-Quatre
+provinceCode: QC
+
+code: s0000479
+en: Sault Ste. Marie
+fr: Sault Ste. Marie
+provinceCode: ON
+
+code: s0000480
+en: Kangirsuk
+fr: Kangirsuk
+provinceCode: QC
+
+code: s0000481
+en: Tofino
+fr: Tofino
+provinceCode: BC
+
+code: s0000482
+en: Ucluelet
+fr: Ucluelet
+provinceCode: BC
+
+code: s0000483
+en: Baie-Comeau
+fr: Baie-Comeau
+provinceCode: QC
+
+code: s0000484
+en: Forestville
+fr: Forestville
+provinceCode: QC
+
+code: s0000485
+en: Bella Coola
+fr: Bella Coola
+provinceCode: BC
+
+code: s0000486
+en: Bagotville
+fr: Bagotville
+provinceCode: QC
+
+code: s0000487
+en: Baker Lake
+fr: Baker Lake
+provinceCode: NU
+
+code: s0000488
+en: Campbell River
+fr: Campbell River
+provinceCode: BC
+
+code: s0000489
+en: Alliston
+fr: Alliston
+provinceCode: ON
+
+code: s0000490
+en: Minnedosa
+fr: Minnedosa
+provinceCode: MB
+
+code: s0000491
+en: Souris
+fr: Souris
+provinceCode: MB
+
+code: s0000492
+en: Brandon
+fr: Brandon
+provinceCode: MB
+
+code: s0000493
+en: Cochrane
+fr: Cochrane
+provinceCode: AB
+
+code: s0000494
+en: Blanc-Sablon
+fr: Blanc-Sablon
+provinceCode: QC
+
+code: s0000495
+en: Cambridge Bay
+fr: Cambridge Bay
+provinceCode: NU
+
+code: s0000496
+en: Nanaimo
+fr: Nanaimo
+provinceCode: BC
+
+code: s0000497
+en: Castlegar
+fr: Castlegar
+provinceCode: BC
+
+code: s0000498
+en: Kugluktuk
+fr: Kugluktuk
+provinceCode: NU
+
+code: s0000499
+en: Blue River
+fr: Blue River
+provinceCode: BC
+
+code: s0000500
+en: Chetwynd
+fr: Chetwynd
+provinceCode: BC
+
+code: s0000501
+en: Chesterfield
+fr: Chesterfield
+provinceCode: NU
+
+code: s0000502
+en: Chipman
+fr: Chipman
+provinceCode: NB
+
+code: s0000503
+en: Doaktown
+fr: Doaktown
+provinceCode: NB
+
+code: s0000504
+en: Clyde River
+fr: Clyde River
+provinceCode: NU
+
+code: s0000505
+en: Kluane Lake
+fr: Lac Kluane
+provinceCode: YT
+
+code: s0000506
+en: Burwash Landing
+fr: Burwash Landing
+provinceCode: YT
+
+code: s0000507
+en: Deer Lake
+fr: Deer Lake
+provinceCode: NL
+
+code: s0000508
+en: Dauphin
+fr: Dauphin
+provinceCode: MB
+
+code: s0000509
+en: Dawson Creek
+fr: Dawson Creek
+provinceCode: BC
+
+code: s0000510
+en: Edmonton (Int'l Aprt)
+fr: Edmonton (Aprt int.)
+provinceCode: AB
+
+code: s0000511
+en: Arviat
+fr: Arviat
+provinceCode: NU
+
+code: s0000512
+en: Elliot Lake
+fr: Elliot Lake
+provinceCode: ON
+
+code: s0000513
+en: Blind River
+fr: Blind River
+provinceCode: ON
+
+code: s0000514
+en: Oxbow
+fr: Oxbow
+provinceCode: SK
+
+code: s0000515
+en: Carlyle
+fr: Carlyle
+provinceCode: SK
+
+code: s0000516
+en: Estevan
+fr: Estevan
+provinceCode: SK
+
+code: s0000517
+en: Fort Severn
+fr: Fort Severn
+provinceCode: ON
+
+code: s0000518
+en: Edson
+fr: Edson
+provinceCode: AB
+
+code: s0000519
+en: Inuvik
+fr: Inuvik
+provinceCode: NT
+
+code: s0000520
+en: Armstrong
+fr: Armstrong
+provinceCode: ON
+
+code: s0000521
+en: Oromocto
+fr: Oromocto
+provinceCode: NB
+
+code: s0000522
+en: Woodstock
+fr: Woodstock
+provinceCode: NB
+
+code: s0000523
+en: Mildred Lake
+fr: Mildred Lake
+provinceCode: AB
+
+code: s0000524
+en: Fort Resolution
+fr: Fort Resolution
+provinceCode: NT
+
+code: s0000525
+en: Fort Simpson
+fr: Fort Simpson
+provinceCode: NT
+
+code: s0000526
+en: Makkovik
+fr: Makkovik
+provinceCode: NL
+
+code: s0000527
+en: Golden
+fr: Golden
+provinceCode: BC
+
+code: s0000528
+en: Greater Napanee
+fr: Greater Napanee
+provinceCode: ON
+
+code: s0000529
+en: Sydenham
+fr: Sydenham
+provinceCode: ON
+
+code: s0000530
+en: Westport
+fr: Westport
+provinceCode: ON
+
+code: s0000531
+en: Kingston
+fr: Kingston
+provinceCode: ON
+
+code: s0000532
+en: La Grande Rivière
+fr: La Grande Rivière
+provinceCode: QC
+
+code: s0000533
+en: Arnes
+fr: Arnes
+provinceCode: MB
+
+code: s0000534
+en: Gimli
+fr: Gimli
+provinceCode: MB
+
+code: s0000535
+en: Gaspé
+fr: Gaspé
+provinceCode: QC
+
+code: s0000536
+en: Forillon
+fr: Forillon
+provinceCode: QC
+
+code: s0000537
+en: Forillon (National Park)
+fr: Forillon ( Parc national)
+provinceCode: QC
+
+code: s0000538
+en: Greenstone (Geraldton)
+fr: Greenstone (Geraldton)
+provinceCode: ON
+
+code: s0000539
+en: Greenstone (Nakina)
+fr: Greenstone (Nakina)
+provinceCode: ON
+
+code: s0000540
+en: Igloolik
+fr: Igloolik
+provinceCode: NU
+
+code: s0000541
+en: Havre St-Pierre
+fr: Havre St-Pierre
+provinceCode: QC
+
+code: s0000542
+en: Kuujjuarapik
+fr: Kuujjuarapik
+provinceCode: QC
+
+code: s0000543
+en: Gillam
+fr: Gillam
+provinceCode: MB
+
+code: s0000544
+en: Quaqtaq
+fr: Quaqtaq
+provinceCode: QC
+
+code: s0000545
+en: Hudson Bay
+fr: Hudson Bay
+provinceCode: SK
+
+code: s0000546
+en: Dryden
+fr: Dryden
+provinceCode: ON
+
+code: s0000547
+en: Hope
+fr: Hope
+provinceCode: BC
+
+code: s0000548
+en: Haldimand County
+fr: Haldimand County
+provinceCode: ON
+
+code: s0000549
+en: Hamilton
+fr: Hamilton
+provinceCode: ON
+
+code: s0000550
+en: Brantford
+fr: Brantford
+provinceCode: ON
+
+code: s0000551
+en: Longueuil
+fr: Longueuil
+provinceCode: QC
+
+code: s0000552
+en: Richelieu
+fr: Richelieu
+provinceCode: QC
+
+code: s0000553
+en: Carignan
+fr: Carignan
+provinceCode: QC
+
+code: s0000554
+en: Chambly
+fr: Chambly
+provinceCode: QC
+
+code: s0000555
+en: Mont-Saint-Hilaire
+fr: Mont-Saint-Hilaire
+provinceCode: QC
+
+code: s0000556
+en: Otterburn Park
+fr: Otterburn Park
+provinceCode: QC
+
+code: s0000557
+en: Saint-Amable
+fr: Saint-Amable
+provinceCode: QC
+
+code: s0000558
+en: Saint-Basile Le Grand
+fr: Saint-Basile Le Grand
+provinceCode: QC
+
+code: s0000559
+en: Sainte-Julie
+fr: Sainte-Julie
+provinceCode: QC
+
+code: s0000560
+en: Enterprise
+fr: Enterprise
+provinceCode: NT
+
+code: s0000561
+en: Hay River
+fr: Hay River
+provinceCode: NT
+
+code: s0000562
+en: Summerside
+fr: Summerside
+provinceCode: PE
+
+code: s0000563
+en: Ivujivik
+fr: Ivujivik
+provinceCode: QC
+
+code: s0000564
+en: Pond Inlet
+fr: Pond Inlet
+provinceCode: NU
+
+code: s0000565
+en: Island Lake
+fr: Island Lake
+provinceCode: MB
+
+code: s0000566
+en: Gods Lake
+fr: Gods Lake
+provinceCode: MB
+
+code: s0000567
+en: Stephenville
+fr: Stephenville
+provinceCode: NL
+
+code: s0000568
+en: Kamloops
+fr: Kamloops
+provinceCode: BC
+
+code: s0000569
+en: Cache Creek
+fr: Cache Creek
+provinceCode: BC
+
+code: s0000570
+en: Aklavik
+fr: Aklavik
+provinceCode: NT
+
+code: s0000571
+en: Guelph
+fr: Guelph
+provinceCode: ON
+
+code: s0000572
+en: Cambridge
+fr: Cambridge
+provinceCode: ON
+
+code: s0000573
+en: Kitchener-Waterloo
+fr: Kitchener-Waterloo
+provinceCode: ON
+
+code: s0000574
+en: Kangiqsujuaq
+fr: Kangiqsujuaq
+provinceCode: QC
+
+code: s0000575
+en: Lac Raglan
+fr: Lac Raglan
+provinceCode: QC
+
+code: s0000576
+en: Key Lake
+fr: Key Lake
+provinceCode: SK
+
+code: s0000577
+en: Schefferville
+fr: Schefferville
+provinceCode: QC
+
+code: s0000578
+en: Akulivik
+fr: Akulivik
+provinceCode: QC
+
+code: s0000579
+en: Waskaganish
+fr: Waskaganish
+provinceCode: QC
+
+code: s0000580
+en: Baie-James
+fr: Baie-James
+provinceCode: QC
+
+code: s0000581
+en: Kindersley
+fr: Kindersley
+provinceCode: SK
+
+code: s0000582
+en: Newmarket
+fr: Newmarket
+provinceCode: ON
+
+code: s0000583
+en: Charlottetown
+fr: Charlottetown
+provinceCode: PE
+
+code: s0000584
+en: Vaughan
+fr: Vaughan
+provinceCode: ON
+
+code: s0000585
+en: Markham
+fr: Markham
+provinceCode: ON
+
+code: s0000586
+en: Aupaluk
+fr: Aupaluk
+provinceCode: QC
+
+code: s0000587
+en: Kimmirut
+fr: Kimmirut
+provinceCode: NU
+
+code: s0000588
+en: Chapleau
+fr: Chapleau
+provinceCode: ON
+
+code: s0000589
+en: Meadow Lake
+fr: Meadow Lake
+provinceCode: SK
+
+code: s0000590
+en: Lloydminster
+fr: Lloydminster
+provinceCode: AB
+
+code: s0000591
+en: Kangiqsualujjuaq
+fr: Kangiqsualujjuaq
+provinceCode: QC
+
+code: s0000592
+en: Kelowna
+fr: Kelowna
+provinceCode: BC
+
+code: s0000593
+en: Mayo
+fr: Mayo
+provinceCode: YT
+
+code: s0000594
+en: Mary's Harbour
+fr: Mary's Harbour
+provinceCode: NL
+
+code: s0000595
+en: Fort McMurray
+fr: Fort McMurray
+provinceCode: AB
+
+code: s0000596
+en: Moosonee
+fr: Moosonee
+provinceCode: ON
+
+code: s0000597
+en: Fort Albany
+fr: Fort Albany
+provinceCode: ON
+
+code: s0000598
+en: Chibougamau
+fr: Chibougamau
+provinceCode: QC
+
+code: s0000599
+en: Umiujaq
+fr: Umiujaq
+provinceCode: QC
+
+code: s0000600
+en: Mirabel
+fr: Mirabel
+provinceCode: QC
+
+code: s0000601
+en: Saint-Jérôme
+fr: Saint-Jérôme
+provinceCode: QC
+
+code: s0000602
+en: Lachute
+fr: Lachute
+provinceCode: QC
+
+code: s0000603
+en: Blainville
+fr: Blainville
+provinceCode: QC
+
+code: s0000604
+en: Boisbriand
+fr: Boisbriand
+provinceCode: QC
+
+code: s0000605
+en: Lorraine
+fr: Lorraine
+provinceCode: QC
+
+code: s0000606
+en: Rosemère
+fr: Rosemère
+provinceCode: QC
+
+code: s0000607
+en: Sainte-Anne-Des-Plaines
+fr: Sainte-Anne-Des-Plaines
+provinceCode: QC
+
+code: s0000608
+en: Sainte-Thérèse
+fr: Sainte-Thérèse
+provinceCode: QC
+
+code: s0000609
+en: Saint-Eustache
+fr: Saint-Eustache
+provinceCode: QC
+
+code: s0000610
+en: Natashquan
+fr: Natashquan
+provinceCode: QC
+
+code: s0000611
+en: Gatineau
+fr: Gatineau
+provinceCode: QC
+
+code: s0000612
+en: Papineau
+fr: Papineau
+provinceCode: QC
+
+code: s0000613
+en: Pontiac
+fr: Pontiac
+provinceCode: QC
+
+code: s0000614
+en: Val-des-Monts
+fr: Val-des-Monts
+provinceCode: QC
+
+code: s0000615
+en: Chelsea
+fr: Chelsea
+provinceCode: QC
+
+code: s0000616
+en: Norway House
+fr: Norway House
+provinceCode: MB
+
+code: s0000617
+en: Matagami
+fr: Matagami
+provinceCode: QC
+
+code: s0000618
+en: Ekati (Lac de Gras)
+fr: Ekati (Lac de Gras)
+provinceCode: NT
+
+code: s0000619
+en: Cold Lake
+fr: Cold Lake
+provinceCode: AB
+
+code: s0000620
+en: Québec
+fr: Québec
+provinceCode: QC
+
+code: s0000621
+en: High Level
+fr: High Level
+provinceCode: AB
+
+code: s0000622
+en: Grand Manan
+fr: Grand Manan
+provinceCode: NB
+
+code: s0000623
+en: Ottawa (Richmond - Metcalfe)
+fr: Ottawa (Richmond - Metcalfe)
+provinceCode: ON
+
+code: s0000624
+en: Prince Albert
+fr: Prince Albert
+provinceCode: SK
+
+code: s0000625
+en: Peace River
+fr: Peace River
+provinceCode: AB
+
+code: s0000626
+en: Portage la Prairie
+fr: Portage la Prairie
+provinceCode: MB
+
+code: s0000627
+en: Inukjuak
+fr: Inukjuak
+provinceCode: QC
+
+code: s0000628
+en: Pickle Lake
+fr: Pickle Lake
+provinceCode: ON
+
+code: s0000629
+en: Peterborough
+fr: Peterborough
+provinceCode: ON
+
+code: s0000630
+en: Port Perry
+fr: Port Perry
+provinceCode: ON
+
+code: s0000631
+en: Kawartha Lakes (Lindsay)
+fr: Kawartha Lakes (Lindsay)
+provinceCode: ON
+
+code: s0000632
+en: Kawartha Lakes (Fenelon Falls)
+fr: Kawartha Lakes (Fenelon Falls)
+provinceCode: ON
+
+code: s0000633
+en: Prince Rupert
+fr: Prince Rupert
+provinceCode: BC
+
+code: s0000634
+en: Powell River
+fr: Powell River
+provinceCode: BC
+
+code: s0000635
+en: Montréal
+fr: Montréal
+provinceCode: QC
+
+code: s0000636
+en: Fort Chipewyan
+fr: Fort Chipewyan
+provinceCode: AB
+
+code: s0000637
+en: Burk's Falls
+fr: Burk's Falls
+provinceCode: ON
+
+code: s0000638
+en: Gravenhurst
+fr: Gravenhurst
+provinceCode: ON
+
+code: s0000639
+en: Port Carling
+fr: Port Carling
+provinceCode: ON
+
+code: s0000640
+en: Huntsville
+fr: Huntsville
+provinceCode: ON
+
+code: s0000641
+en: Bracebridge
+fr: Bracebridge
+provinceCode: ON
+
+code: s0000642
+en: Muskoka
+fr: Muskoka
+provinceCode: ON
+
+code: s0000643
+en: Rainbow Lake
+fr: Rainbow Lake
+provinceCode: AB
+
+code: s0000644
+en: The Pas
+fr: The Pas
+provinceCode: MB
+
+code: s0000645
+en: Red Deer
+fr: Red Deer
+provinceCode: AB
+
+code: s0000646
+en: Windsor
+fr: Windsor
+provinceCode: ON
+
+code: s0000647
+en: Good Hope Lake
+fr: Good Hope Lake
+provinceCode: BC
+
+code: s0000648
+en: Watson Lake
+fr: Watson Lake
+provinceCode: YT
+
+code: s0000649
+en: Yarmouth
+fr: Yarmouth
+provinceCode: NS
+
+code: s0000650
+en: Sioux Narrows
+fr: Sioux Narrows
+provinceCode: ON
+
+code: s0000651
+en: Kenora
+fr: Kenora
+provinceCode: ON
+
+code: s0000652
+en: Lethbridge
+fr: Lethbridge
+provinceCode: AB
+
+code: s0000653
+en: Shediac
+fr: Shédiac
+provinceCode: NB
+
+code: s0000654
+en: Moncton
+fr: Moncton
+provinceCode: NB
+
+code: s0000655
+en: Hopewell
+fr: Hopewell
+provinceCode: NB
+
+code: s0000656
+en: Comox
+fr: Comox
+provinceCode: BC
+
+code: s0000657
+en: Courtenay
+fr: Courtenay
+provinceCode: BC
+
+code: s0000658
+en: Brampton
+fr: Brampton
+provinceCode: ON
+
+code: s0000659
+en: Kakabeka Falls
+fr: Kakabeka Falls
+provinceCode: ON
+
+code: s0000660
+en: Dorion
+fr: Dorion
+provinceCode: ON
+
+code: s0000661
+en: Grande Prairie
+fr: Grande Prairie
+provinceCode: AB
+
+code: s0000662
+en: Canora
+fr: Canora
+provinceCode: SK
+
+code: s0000663
+en: Yorkton
+fr: Yorkton
+provinceCode: SK
+
+code: s0000664
+en: Kamsack
+fr: Kamsack
+provinceCode: SK
+
+code: s0000665
+en: Melville
+fr: Melville
+provinceCode: SK
+
+code: s0000666
+en: North Battleford
+fr: North Battleford
+provinceCode: SK
+
+code: s0000667
+en: Gander
+fr: Gander
+provinceCode: NL
+
+code: s0000668
+en: Campbellton
+fr: Campbellton
+provinceCode: NL
+
+code: s0000669
+en: Lewisporte
+fr: Lewisporte
+provinceCode: NL
+
+code: s0000670
+en: Sydney
+fr: Sydney
+provinceCode: NS
+
+code: s0000671
+en: Quesnel
+fr: Quesnel
+provinceCode: BC
+
+code: s0000672
+en: Resolute
+fr: Resolute
+provinceCode: NU
+
+code: s0000673
+en: Roberval
+fr: Roberval
+provinceCode: QC
+
+code: s0000674
+en: Lac-Saint-Jean
+fr: Lac-Saint-Jean
+provinceCode: QC
+
+code: s0000675
+en: Saint-Félicien
+fr: Saint-Félicien
+provinceCode: QC
+
+code: s0000676
+en: Red Lake
+fr: Red Lake
+provinceCode: ON
+
+code: s0000677
+en: Pikangikum
+fr: Pikangikum
+provinceCode: ON
+
+code: s0000678
+en: Rankin Inlet
+fr: Rankin Inlet
+provinceCode: NU
+
+code: s0000679
+en: Revelstoke
+fr: Revelstoke
+provinceCode: BC
+
+code: s0000680
+en: Greater Sudbury
+fr: Grand Sudbury
+provinceCode: ON
+
+code: s0000681
+en: Sherbrooke
+fr: Sherbrooke
+provinceCode: QC
+
+code: s0000682
+en: Val-des-Sources
+fr: Val-des-Sources
+provinceCode: QC
+
+code: s0000683
+en: Suffield
+fr: Suffield
+provinceCode: AB
+
+code: s0000684
+en: Stony Rapids
+fr: Stony Rapids
+provinceCode: SK
+
+code: s0000685
+en: Quispamsis
+fr: Quispamsis
+provinceCode: NB
+
+code: s0000686
+en: Sussex
+fr: Sussex
+provinceCode: NB
+
+code: s0000687
+en: Saint John
+fr: Saint John
+provinceCode: NB
+
+code: s0000688
+en: Fundy (National Park)
+fr: Fundy (Parc national)
+provinceCode: NB
+
+code: s0000689
+en: Sanikiluaq
+fr: Sanikiluaq
+provinceCode: NU
+
+code: s0000690
+en: Fort Smith
+fr: Fort Smith
+provinceCode: NT
+
+code: s0000691
+en: St. Catharines
+fr: St. Catharines
+provinceCode: ON
+
+code: s0000692
+en: Niagara Falls
+fr: Niagara Falls
+provinceCode: ON
+
+code: s0000693
+en: Nanisivik
+fr: Nanisivik
+provinceCode: NU
+
+code: s0000694
+en: Kinngait
+fr: Kinngait
+provinceCode: NU
+
+code: s0000695
+en: Thompson
+fr: Thompson
+provinceCode: MB
+
+code: s0000696
+en: Sachigo Lake
+fr: Sachigo Lake
+provinceCode: ON
+
+code: s0000697
+en: Big Trout Lake
+fr: Big Trout Lake
+provinceCode: ON
+
+code: s0000698
+en: Wunnummin Lake
+fr: Wunnummin Lake
+provinceCode: ON
+
+code: s0000699
+en: Tasiujaq
+fr: Tasiujaq
+provinceCode: QC
+
+code: s0000700
+en: Stirling
+fr: Stirling
+provinceCode: ON
+
+code: s0000701
+en: Trenton
+fr: Trenton
+provinceCode: ON
+
+code: s0000702
+en: Prince Edward (Picton)
+fr: Prince Edward (Picton)
+provinceCode: ON
+
+code: s0000703
+en: Belleville
+fr: Belleville
+provinceCode: ON
+
+code: s0000704
+en: Quinte West
+fr: Quinte Ouest
+provinceCode: ON
+
+code: s0000705
+en: Timmins
+fr: Timmins
+provinceCode: ON
+
+code: s0000706
+en: Cochrane
+fr: Cochrane
+provinceCode: ON
+
+code: s0000707
+en: Oshawa
+fr: Oshawa
+provinceCode: ON
+
+code: s0000708
+en: Whitby
+fr: Whitby
+provinceCode: ON
+
+code: s0000709
+en: Shawinigan
+fr: Shawinigan
+provinceCode: QC
+
+code: s0000710
+en: Pickering
+fr: Pickering
+provinceCode: ON
+
+code: s0000711
+en: Puvirnituq
+fr: Puvirnituq
+provinceCode: QC
+
+code: s0000712
+en: Laval
+fr: Laval
+provinceCode: QC
+
+code: s0000713
+en: Naujaat
+fr: Naujaat
+provinceCode: NU
+
+code: s0000714
+en: Sanirajak
+fr: Sanirajak
+provinceCode: NU
+
+code: s0000715
+en: La Ronge
+fr: La Ronge
+provinceCode: SK
+
+code: s0000716
+en: Qikiqtarjuaq
+fr: Qikiqtarjuaqq
+provinceCode: NU
+
+code: s0000717
+en: Val-d'Or
+fr: Val-d'Or
+provinceCode: QC
+
+code: s0000718
+en: Amos
+fr: Amos
+provinceCode: QC
+
+code: s0000719
+en: Kuujjuaq
+fr: Kuujjuaq
+provinceCode: QC
+
+code: s0000720
+en: Norman Wells
+fr: Norman Wells
+provinceCode: NT
+
+code: s0000721
+en: Joliette
+fr: Joliette
+provinceCode: QC
+
+code: s0000722
+en: La Loche
+fr: La Loche
+provinceCode: SK
+
+code: s0000723
+en: Buffalo Narrows
+fr: Buffalo Narrows
+provinceCode: SK
+
+code: s0000724
+en: Wiarton
+fr: Wiarton
+provinceCode: ON
+
+code: s0000725
+en: Port Elgin
+fr: Port Elgin
+provinceCode: ON
+
+code: s0000726
+en: Saugeen Shores
+fr: Saugeen Shores
+provinceCode: ON
+
+code: s0000727
+en: South Bruce Peninsula
+fr: South Bruce Peninsula
+provinceCode: ON
+
+code: s0000728
+en: Owen Sound
+fr: Owen Sound
+provinceCode: ON
+
+code: s0000729
+en: Petawawa
+fr: Petawawa
+provinceCode: ON
+
+code: s0000730
+en: Pembroke
+fr: Pembroke
+provinceCode: ON
+
+code: s0000731
+en: Renfrew
+fr: Renfrew
+provinceCode: ON
+
+code: s0000732
+en: Deep River
+fr: Deep River
+provinceCode: ON
+
+code: s0000733
+en: Moosomin
+fr: Moosomin
+provinceCode: SK
+
+code: s0000734
+en: Richer
+fr: Richer
+provinceCode: MB
+
+code: s0000735
+en: Victoria Harbour
+fr: Victoria Harbour
+provinceCode: BC
+
+code: s0000736
+en: Wabush Lake
+fr: Wabush Lake
+provinceCode: NL
+
+code: s0000737
+en: Labrador City
+fr: Labrador City
+provinceCode: NL
+
+code: s0000738
+en: Fermont
+fr: Fermont
+provinceCode: QC
+
+code: s0000739
+en: Williams Lake
+fr: Williams Lake
+provinceCode: BC
+
+code: s0000740
+en: Wrigley
+fr: Wrigley
+provinceCode: NT
+
+code: s0000741
+en: Cranbrook
+fr: Cranbrook
+provinceCode: BC
+
+code: s0000742
+en: Saint-Timothée
+fr: Saint-Timothée
+provinceCode: QC
+
+code: s0000743
+en: Rosthern
+fr: Rosthern
+provinceCode: SK
+
+code: s0000744
+en: Lambton Shores
+fr: Lambton Shores
+provinceCode: ON
+
+code: s0000745
+en: Medicine Hat
+fr: Medicine Hat
+provinceCode: AB
+
+code: s0000746
+en: Fort St. John
+fr: Fort St. John
+provinceCode: BC
+
+code: s0000747
+en: Savant Lake
+fr: Savant Lake
+provinceCode: ON
+
+code: s0000748
+en: Sioux Lookout
+fr: Sioux Lookout
+provinceCode: ON
+
+code: s0000749
+en: Whale Cove
+fr: Whale Cove
+provinceCode: NU
+
+code: s0000750
+en: Pangnirtung
+fr: Pangnirtung
+provinceCode: NU
+
+code: s0000751
+en: Beaver Creek
+fr: Beaver Creek
+provinceCode: YT
+
+code: s0000752
+en: Earlton
+fr: Earlton
+provinceCode: ON
+
+code: s0000753
+en: Temiskaming Shores
+fr: Temiskaming Shores
+provinceCode: ON
+
+code: s0000754
+en: Vanderhoof
+fr: Vanderhoof
+provinceCode: BC
+
+code: s0000755
+en: Repentigny
+fr: Repentigny
+provinceCode: QC
+
+code: s0000756
+en: Kitimat
+fr: Kitimat
+provinceCode: BC
+
+code: s0000757
+en: Terrace
+fr: Terrace
+provinceCode: BC
+
+code: s0000758
+en: Abbotsford
+fr: Abbotsford
+provinceCode: BC
+
+code: s0000759
+en: Paulatuk
+fr: Paulatuk
+provinceCode: NT
+
+code: s0000760
+en: Carcross
+fr: Carcross
+provinceCode: YT
+
+code: s0000761
+en: Wawa
+fr: Wawa
+provinceCode: ON
+
+code: s0000762
+en: Montreal River Harbour
+fr: Montreal River Harbour
+provinceCode: ON
+
+code: s0000763
+en: Lake Superior (Provincial Park)
+fr: Lac Supérieur (Parc provincial)
+provinceCode: ON
+
+code: s0000764
+en: White River
+fr: White River
+provinceCode: ON
+
+code: s0000765
+en: North Bay
+fr: North Bay
+provinceCode: ON
+
+code: s0000766
+en: West Nipissing
+fr: Nipissing Ouest
+provinceCode: ON
+
+code: s0000767
+en: Okotoks
+fr: Okotoks
+provinceCode: AB
+
+code: s0000768
+en: Airdrie
+fr: Airdrie
+provinceCode: AB
+
+code: s0000769
+en: Delson
+fr: Delson
+provinceCode: QC
+
+code: s0000770
+en: Smithers
+fr: Smithers
+provinceCode: BC
+
+code: s0000771
+en: Fort Nelson
+fr: Fort Nelson
+provinceCode: BC
+
+code: s0000772
+en: Penticton
+fr: Penticton
+provinceCode: BC
+
+code: s0000773
+en: Richmond Hill
+fr: Richmond Hill
+provinceCode: ON
+
+code: s0000774
+en: Taloyoak
+fr: Taloyoak
+provinceCode: NU
+
+code: s0000775
+en: Victoria
+fr: Victoria
+provinceCode: BC
+
+code: s0000776
+en: Leaf Rapids
+fr: Leaf Rapids
+provinceCode: MB
+
+code: s0000777
+en: Lynn Lake
+fr: Lynn Lake
+provinceCode: MB
+
+code: s0000778
+en: Brochet
+fr: Brochet
+provinceCode: MB
+
+code: s0000779
+en: Churchill
+fr: Churchill
+provinceCode: MB
+
+code: s0000780
+en: Happy Valley-Goose Bay
+fr: Happy Valley-Goose Bay
+provinceCode: NL
+
+code: s0000781
+en: Grande Cache
+fr: Grande Cache
+provinceCode: AB
+
+code: s0000782
+en: Kapuskasing
+fr: Kapuskasing
+provinceCode: ON
+
+code: s0000783
+en: Mont-Joli
+fr: Mont-Joli
+provinceCode: QC
+
+code: s0000784
+en: Matane
+fr: Matane
+provinceCode: QC
+
+code: s0000785
+en: Toronto Island
+fr: Toronto Island
+provinceCode: ON
+
+code: s0000786
+en: Mississauga
+fr: Mississauga
+provinceCode: ON
+
+code: s0000787
+en: Caledon
+fr: Caledon
+provinceCode: ON
+
+code: s0000788
+en: Regina
+fr: Regina
+provinceCode: SK
+
+code: s0000789
+en: Halton Hills
+fr: Halton Hills
+provinceCode: ON
+
+code: s0000790
+en: Gore Bay
+fr: Gore Bay
+provinceCode: ON
+
+code: s0000791
+en: Detah
+fr: Detah
+provinceCode: NT
+
+code: s0000792
+en: Victoria (Hartland)
+fr: Victoria (Hartland)
+provinceCode: BC
+
+code: s0000793
+en: Salluit
+fr: Salluit
+provinceCode: QC
+
+code: s0000794
+en: Slave Lake
+fr: Slave Lake
+provinceCode: AB
+
+code: s0000795
+en: Sandspit
+fr: Sandspit
+provinceCode: BC
+
+code: s0000796
+en: Sarnia
+fr: Sarnia
+provinceCode: ON
+
+code: s0000797
+en: Saskatoon
+fr: Saskatoon
+provinceCode: SK
+
+code: s0000798
+en: Coral Harbour
+fr: Coral Harbour
+provinceCode: NU
+
+code: s0000799
+en: Port Hardy
+fr: Port Hardy
+provinceCode: BC
+
+code: s0000800
+en: Sept-Îles
+fr: Sept-Îles
+provinceCode: QC
+
+code: s0000801
+en: Port-Cartier
+fr: Port-Cartier
+provinceCode: QC
+
+code: s0000802
+en: Annapolis Royal
+fr: Annapolis Royal
+provinceCode: NS
+
+code: s0000803
+en: Greenwood
+fr: Greenwood
+provinceCode: NS
+
+code: s0000804
+en: Bridgetown
+fr: Bridgetown
+provinceCode: NS
+
+code: s0000805
+en: Mackenzie
+fr: Mackenzie
+provinceCode: BC
+
+code: s0000806
+en: Bathurst
+fr: Bathurst
+provinceCode: NB
+
+code: s0000807
+en: Campbellton
+fr: Campbellton
+provinceCode: NB
+
+code: s0000808
+en: Dalhousie
+fr: Dalhousie
+provinceCode: NB
+
+code: s0000809
+en: Charlo
+fr: Charlo
+provinceCode: NB
+
+code: s0000810
+en: Pointe-à-la-Croix
+fr: Pointe-à-la-Croix
+provinceCode: QC
+
+code: s0000811
+en: Carleton-sur-Mer
+fr: Carleton-sur-Mer
+provinceCode: QC
+
+code: s0000812
+en: Tatamagouche
+fr: Tatamagouche
+provinceCode: NS
+
+code: s0000813
+en: Truro
+fr: Truro
+provinceCode: NS
+
+code: s0000814
+en: Economy
+fr: Economy
+provinceCode: NS
+
+code: s0000815
+en: Orangeville
+fr: Orangeville
+provinceCode: ON
+
+code: s0000816
+en: Fort McPherson
+fr: Fort McPherson
+provinceCode: NT
+
+code: s0000817
+en: Tulita
+fr: Tulita
+provinceCode: NT
+
+code: s0000818
+en: Fort Good Hope
+fr: Fort Good Hope
+provinceCode: NT
+
+code: s0000819
+en: Ignace
+fr: Ignace
+provinceCode: ON
+
+code: s0000820
+en: Gjoa Haven
+fr: Gjoa Haven
+provinceCode: NU
+
+code: s0000821
+en: Alert
+fr: Alert
+provinceCode: NU
+
+code: s0000822
+en: Moose Jaw
+fr: Moose Jaw
+provinceCode: SK
+
+code: s0000823
+en: Old Crow
+fr: Old Crow
+provinceCode: YT
+
+code: s0000824
+en: Pincher Creek
+fr: Pincher Creek
+provinceCode: AB
+
+code: s0000825
+en: Whitehorse
+fr: Whitehorse
+provinceCode: YT
+
+code: s0000826
+en: Sandy Lake
+fr: Sandy Lake
+provinceCode: ON
+
+code: s0000827
+en: St. Peters Bay
+fr: St. Peters Bay
+provinceCode: PE
+
+code: s0000828
+en: Stewart
+fr: Stewart
+provinceCode: BC
+
+code: s0000829
+en: Stettler
+fr: Stettler
+provinceCode: AB
+
+code: s0000830
+en: Tuktoyaktuk
+fr: Tuktoyaktuk
+provinceCode: NT
+
+code: s0000831
+en: Delta
+fr: Delta
+provinceCode: MB
+
+code: s0000832
+en: Churchill Falls
+fr: Churchill Falls
+provinceCode: NL
+
+code: s0000833
+en: Wainwright
+fr: Wainwright
+provinceCode: AB
+
+code: s0000834
+en: Bella Bella
+fr: Bella Bella
+provinceCode: BC
+
+code: s0000835
+en: Lloydminster
+fr: Lloydminster
+provinceCode: SK
+
+code: s0000843
+en: Sudbury (Greater)
+fr: Sudbury (Grand)
+provinceCode: ON
+
+code: s0000845
+en: Cummins Lakes Park
+fr: Cummins Lakes Park
+provinceCode: BC
+
+code: s0000846
+en: Coquihalla Highway - Hope to Merritt
+fr: route de Coquihalla - de Hope à Merritt
+provinceCode: HEF
+
+code: s0000847
+en: Coquihalla Highway - Merritt to Kamloops
+fr: route de Coquihalla - de Merritt à Kamloops
+provinceCode: HEF
+
+code: s0000849
+en: Highway 3 - Hope to Princeton via Allison Pass
+fr: route 3 - de Hope à Princeton via le col Allison
+provinceCode: HEF
+
+code: s0000850
+en: Highway 3 - Paulson Summit to Kootenay Pass
+fr: route 3 - du sommet Paulson au col Kootenay
+provinceCode: HEF
+
+code: s0000851
+en: Highway 97 - Clinton to 100 Mile House via Begbie Summit
+fr: route 97 - de Clinton à 100 Mile House via le sommet Begbie
+provinceCode: HEF
+
+code: s0000852
+en: Highway 97 - Pine Pass
+fr: route 97 - col Pine
+provinceCode: HEF
+
+code: s0000853
+en: Okanagan Connector - Merritt to Kelowna
+fr: route de liaison Okanagan - de Merritt à Kelowna
+provinceCode: HEF
+
+code: s0000854
+en: Sea to Sky - Squamish to Whistler
+fr: Sea to Sky - de Squamish à Whistler
+provinceCode: HEF
+
+code: s0000856
+en: Trans-Canada Highway - Eagle Pass to Rogers Pass
+fr: route Transcanadienne - du col Eagle au col Rogers
+provinceCode: HEF
+
+code: s0000857
+en: L'Anse-au-Loup
+fr: L'Anse-au-Loup
+provinceCode: NL
+
+code: s0000858
+en: Rigolet
+fr: Rigolet
+provinceCode: NL
+
+code: s0000859
+en: Cartwright Junction (Trans-Labrador Hwy)
+fr: Cartwright Junction (Rte Trans-Labrador)
+provinceCode: NL
+
+code: s0000860
+en: Gull Island Rapids (Trans-Labrador Hwy)
+fr: Gull Island Rapids (Rte Trans-Labrador)
+provinceCode: NL
+
+code: s0000861
+en: Eskasoni
+fr: Eskasoni
+provinceCode: NS
+
+code: s0000862
+en: Richmond
+fr: Richmond
+provinceCode: BC
+
+code: s0000863
+en: Duncan
+fr: Duncan
+provinceCode: BC
+
+code: s0000864
+en: Qualicum Beach
+fr: Qualicum Beach
+provinceCode: BC
+
+code: s0000865
+en: West Vancouver
+fr: West Vancouver
+provinceCode: BC
+
+code: s0000866
+en: Langley
+fr: Langley
+provinceCode: BC
+
+code: s0000867
+en: Yellowhead Highway - Tête Jaune Cache to the Alberta Border
+fr: Route Yellowhead - de Tête Jaune Cache à la frontière de l'Alberta
+provinceCode: HEF
+
+code: s0000868
+en: Malahat Highway - Goldstream to Mill Bay
+fr: Route Malahat - de Goldstream à Mill Bay
+provinceCode: HEF
+
