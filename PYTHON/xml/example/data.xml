@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<siteList>
+	<site code="s0000001">
+		<nameEn>Athabasca</nameEn>
+		<nameFr>Athabasca</nameFr>
+		<provinceCode>AB</provinceCode>
+	</site>
+	<site code="s0000002">
+		<nameEn>Clearwater</nameEn>
+		<nameFr>Clearwater</nameFr>
+		<provinceCode>BC</provinceCode>
+	</site>
+</siteList>
