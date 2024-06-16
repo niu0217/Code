@@ -1,0 +1,4 @@
+假设我们现在运行了一个程序，名字叫client：
+    查看进程号：pgrep client  输出：791672
+    查看已经使用了的端口：sudo lsof -i -P -n | grep 791672
+    查看8888端口的TCP信息：sudo netstat -napt | grep 8888
