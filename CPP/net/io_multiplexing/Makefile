@@ -3,7 +3,7 @@ LIBS = -pthread
 
 all:
 	g++ ${CXX_FLAGS} client client.cpp ${LIBS}
-	g++ ${CXX_FLAGS} poll poll_server.cpp
+	g++ ${CXX_FLAGS} epoll epoll_server.cpp
 
 clean:
-	rm client poll
+	rm client epoll

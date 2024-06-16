@@ -5,13 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(gdb) xml",
+      "name": "(gdb) net",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/CPP/xml/use/use",
+      "program": "${workspaceFolder}/CPP/net/io_multiplexing/epoll",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}/CPP/xml/use/",
+      "cwd": "${workspaceFolder}/CPP/net/io_multiplexing/",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
