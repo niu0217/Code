@@ -171,26 +171,26 @@ int selectClient_10hello()
 }
 
 /// 创建 threadNum 个线程，然后都向服务器发送hello消息
-int selectClient_XClient(const int threadNum)
+int launchXConnection(const int threadNum)
 {
   std::vector<std::thread> clients;
   std::mutex mutex;
   std::condition_variable cv;
   int count = 0;
 
-  /// 创建10个线程
+  /// 创建 threadNum 个线程
   for (int i = 0; i < threadNum; i++)
   {
     clients.emplace_back(std::thread(clientThreadFunc, std::ref(cv), std::ref(mutex), std::ref(count)));
   }
 
   {
-    /// 等待10个线程都完成自己的工作
+    /// 等待 threadNum 个线程都完成自己的工作
     std::unique_lock<std::mutex> lock(mutex);
     cv.wait(lock, [&count, &threadNum] { return count == threadNum; });
   }
 
-  /// 回收10个子线程
+  /// 回收 threadNum 个子线程
   for (std::thread &client : clients)
   {
     client.join();
@@ -203,5 +203,5 @@ int main()
 {
   // originalClient();
   // selectClient_10hello();
-  selectClient_XClient(50);
+  launchXConnection(2);
 }
