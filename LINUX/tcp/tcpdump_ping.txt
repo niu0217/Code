@@ -1,0 +1,9 @@
+实验：使用tcpdump抓取ping包
+
+第一步：新开一个终端，执行下面的命令
+    sudo tcpdump -i eth0 icmp and host www.baidu.com -w ping.pcap
+
+第二步：新开一个终端，执行下面命令
+    ping -I eth0 -c 3 www.baidu.com
+
+第三步：下载ping.pcap文件，用wireshark分析结果
