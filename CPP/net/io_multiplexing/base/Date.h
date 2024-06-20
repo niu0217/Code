@@ -5,3 +5,9 @@
 > Description:   
  ************************************************************************/
 
+#ifndef BASE_DATE_H
+#define BASE_DATE_H
+
+
+
+#endif  // BASE_DATE_H

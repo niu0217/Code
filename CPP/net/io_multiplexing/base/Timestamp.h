@@ -5,16 +5,13 @@
 > Description:   时间戳类
  ************************************************************************/
 
+#ifndef BASE_TIMESTAMP_H
+#define BASE_TIMESTAMP_H
+
+#include "base/copyable.h"
 #include <boost/operators.hpp>
 
 using std::string;
-
-class copyable
-{
- protected:
-  copyable() = default;
-  ~copyable() = default;
-};
 
 class Timestamp : public copyable,
                   public boost::equality_comparable<Timestamp>,
@@ -92,3 +89,5 @@ inline Timestamp addTime(Timestamp timestamp, double seconds)
   int64_t delta = static_cast<int64_t>(seconds * Timestamp::kMicroSecondsPerSecond);
   return Timestamp(timestamp.microSecondsSinceEpoch() + delta);
 }
+
+#endif // BASE_TIMESTAMP_H

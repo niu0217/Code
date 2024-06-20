@@ -5,17 +5,14 @@
 > Description:   
  ************************************************************************/
 
+#ifndef BASE_TIMEZONE_H
+#define BASE_TIMEZONE_H
+
+#include "base/copyable.h"
 #include <memory>
 #include <time.h>
 
 using std::string;
-
-class copyable
-{
- protected:
-  copyable() = default;
-  ~copyable() = default;
-};
 
 struct DateTime
 {
@@ -67,3 +64,5 @@ class TimeZone : public copyable
 
   std::shared_ptr<Data> data_;
 };
+
+#endif  // BASE_TIMEZONE_H
