@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 2.6)
 
 project(SimpleNet)
 
+# 启用测试
+enable_testing()
+
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE "Debug")
 endif()
@@ -40,7 +43,9 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
-find_package(Boost REQUIRED) # 告诉CMake去寻找并导入Boost库 如果Boost库没有被正确安装或无法被发现，将会触发一个错误
+find_package(Boost REQUIRED) # 查找并加载Boost库
+# 在Boost库中查找名为 boost_unit_test_framework 的库文件
+find_library(BOOSTTEST_LIBRARY NAMES boost_unit_test_framework)
 
 include_directories(${Boost_INCLUDE_DIRS})
 include_directories(${PROJECT_SOURCE_DIR})

@@ -1,5 +1,6 @@
 set(base_SRCS
  Timestamp.cpp
+ Date.cpp
  )
 
 add_library(io_base ${base_SRCS})
