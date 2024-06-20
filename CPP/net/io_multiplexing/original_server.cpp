@@ -83,6 +83,7 @@ int main()
     valread = read(connFd, buffer, BUFFER_SIZE);
     if (valread <= 0)
     {
+      close(connFd);
       break;
     }
 

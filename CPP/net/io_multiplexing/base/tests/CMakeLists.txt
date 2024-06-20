@@ -1,0 +1,2 @@
+add_executable(timestamp_test Timestamp_test.cpp)
+target_link_libraries(timestamp_test io_base)
