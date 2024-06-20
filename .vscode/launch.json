@@ -8,7 +8,7 @@
       "name": "(gdb) net",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/CPP/net/io_multiplexing/bin/date_unittest",
+      "program": "${workspaceFolder}/CPP/net/io_multiplexing/bin/timezone_util",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}/CPP/net/io_multiplexing/bin/",

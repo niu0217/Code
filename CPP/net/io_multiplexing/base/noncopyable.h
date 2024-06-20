@@ -8,6 +8,10 @@
 #ifndef BASE_NOCOPYABLE_H
 #define BASE_NOCOPYABLE_H
 
+///
+/// 是一个工具类，用于防止其他类意外地继承并启用复制操作，确保了某些对象的状态是
+/// 不可复制的，并保护它们不受拷贝操作的破坏
+///
 class noncopyable
 {
  public:
