@@ -51,7 +51,7 @@ class Condition : noncopyable
   }
 
  private:
-  MutexLock& mutex_;
+  MutexLock& mutex_;  // 占8字节
   pthread_cond_t pcond_;  // 条件变量，配合 mutex_ 使用
 };
 

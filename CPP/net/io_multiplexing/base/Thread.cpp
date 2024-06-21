@@ -49,6 +49,10 @@ class ThreadNameInitializer
   }
 };
 
+// 特别注意：
+//   init 是一个全局变量，在执行main函数之前就会被调用！！！
+//   也就是当我们启动一个可执行文件时，它会先进行所有全局变量的初始化操作，然后才会执行main函数
+//   而在全局变量 init 的初始化操作中，我们就可以将当前线程和进程id缓存起来
 ThreadNameInitializer init;
 
 struct ThreadData
@@ -73,6 +77,7 @@ struct ThreadData
   {
     *tid_ = CurrentThread::tid();
     tid_ = NULL;  // Why？
+    // 线程函数启动了，这时候可以通知主线程
     latch_->countDown();
     latch_ = NULL;
 
@@ -185,7 +190,8 @@ void Thread::start()
   }
   else
   {
-    latch_.wait();
+    // 阻塞 等待条件满足 在这里主要是等待线程函数启动
+    latch_.wait(); 
     assert(tid_ > 0);
   }
 }

@@ -17,6 +17,7 @@ CountDownLatch::CountDownLatch(int count)
 void CountDownLatch::wait()
 {
   MutexLockGuard lock(mutex_);
+  // 这里不能改为if，因为可能存在虚假的唤醒
   while (count_ > 0)
   {
     condition_.wait();

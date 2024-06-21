@@ -28,6 +28,7 @@ void threadFunc()
   }
 }
 
+// 告诉编译器，禁止内联 foo 函数
 int foo() __attribute__ ((noinline));
 
 int g_count = 0;
@@ -46,10 +47,10 @@ int foo()
 
 int main()
 {
-  printf("sizeof pthread_mutex_t: %zd\n", sizeof(pthread_mutex_t));
-  printf("sizeof Mutex: %zd\n", sizeof(MutexLock));
-  printf("sizeof pthread_cond_t: %zd\n", sizeof(pthread_cond_t));
-  printf("sizeof Condition: %zd\n", sizeof(Condition));
+  printf("sizeof pthread_mutex_t: %zd\n", sizeof(pthread_mutex_t));  // 40
+  printf("sizeof Mutex: %zd\n", sizeof(MutexLock));  // 48
+  printf("sizeof pthread_cond_t: %zd\n", sizeof(pthread_cond_t));  // 48
+  printf("sizeof Condition: %zd\n", sizeof(Condition));  // 56
   MCHECK(foo());
   if (g_count != 1)
   {
@@ -66,11 +67,11 @@ int main()
     g_vec.push_back(i);
   }
 
-  printf("single thread without lock %f\n", timeDifference(Timestamp::now(), start));
+  printf("single thread without lock %f\n", timeDifference(Timestamp::now(), start)); // 0.2s左右
 
   start = Timestamp::now();
   threadFunc();
-  printf("single thread with lock %f\n", timeDifference(Timestamp::now(), start));
+  printf("single thread with lock %f\n", timeDifference(Timestamp::now(), start));  // 0.5s左右
 
   for (int nthreads = 1; nthreads < kMaxThreads; ++nthreads)
   {

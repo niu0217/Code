@@ -14,5 +14,8 @@
 # add_executable(fork_test Fork_test.cpp)
 # target_link_libraries(fork_test io_base)
 
-add_executable(mutex_test Mutex_test.cpp)
-target_link_libraries(mutex_test io_base)
+# add_executable(mutex_test Mutex_test.cpp)
+# target_link_libraries(mutex_test io_base)
+
+add_executable(thread_test Thread_test.cpp)
+target_link_libraries(thread_test io_base)
