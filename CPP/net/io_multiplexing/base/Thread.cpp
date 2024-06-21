@@ -76,12 +76,16 @@ struct ThreadData
   void runInThread()
   {
     *tid_ = CurrentThread::tid();
-    tid_ = NULL;  // Why？
+    tid_ = NULL;
     // 线程函数启动了，这时候可以通知主线程
     latch_->countDown();
     latch_ = NULL;
 
     CurrentThread::t_threadName = name_.empty() ? "muduoThread" : name_.c_str();
+    // prctl系统调用：
+    //   用于更改当前线程的名字；
+    //   这个操作对调试特别有帮助，因为线程名字会出现在诸如top、ps命令的输出中，以及在gdb等调试工具里
+    //   使得在多线程程序中更容易识别和监控各个线程的状态。
     ::prctl(PR_SET_NAME, CurrentThread::t_threadName);
     try
     {

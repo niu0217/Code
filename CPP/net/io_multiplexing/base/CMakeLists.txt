@@ -7,6 +7,7 @@ set(base_SRCS
  Condition.cpp
  CountDownLatch.cpp
  Exception.cpp
+ ThreadPool.cpp
  )
 
 add_library(io_base ${base_SRCS})

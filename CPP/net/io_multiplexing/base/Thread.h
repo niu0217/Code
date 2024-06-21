@@ -46,7 +46,7 @@ class Thread : noncopyable
   string     name_;
   CountDownLatch latch_;
 
-  static AtomicInt32 numCreated_;
+  static AtomicInt32 numCreated_;  // 用于统计一共创建了多少个线程
 };
 
 #endif  // BASE_THREAD_H

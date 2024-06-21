@@ -8,7 +8,7 @@
       "name": "(gdb) net",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/CPP/net/io_multiplexing/bin/mutex_test",
+      "program": "${workspaceFolder}/CPP/net/io_multiplexing/bin/thread_test",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}/CPP/net/io_multiplexing/bin/",
