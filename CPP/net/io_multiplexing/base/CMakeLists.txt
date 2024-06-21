@@ -2,6 +2,11 @@ set(base_SRCS
  Timestamp.cpp
  Date.cpp
  TimeZone.cpp
+ CurrentThread.cpp
+ Thread.cpp
+ Condition.cpp
+ CountDownLatch.cpp
+ Exception.cpp
  )
 
 add_library(io_base ${base_SRCS})
