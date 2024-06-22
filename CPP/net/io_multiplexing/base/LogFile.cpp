@@ -80,6 +80,7 @@ void LogFile::append_unlocked(const char* logline, int len)
       time_t thisPeriod_ = now / kRollPerSeconds_ * kRollPerSeconds_;
       if (thisPeriod_ != startOfPeriod_)
       {
+        // 如果这是第二天，则创建一个新的日志文件
         rollFile();
       }
       else if (now - lastFlush_ > flushInterval_)

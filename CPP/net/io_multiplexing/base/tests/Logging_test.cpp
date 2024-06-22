@@ -37,7 +37,7 @@ void bench(const char* type)
   g_total = 0;
 
   int n = 1000*1000;
-  const bool kLongLog = true;
+  const bool kLongLog = false;
   string empty = " ";
   string longStr(3000, 'X');
   longStr += " ";
@@ -63,38 +63,38 @@ int main()
 {
   getppid(); // for ltrace and strace
 
-  ThreadPool pool("pool");
-  pool.start(5);  // 线程池中用5个线程
-  pool.run(logInThread);
-  pool.run(logInThread);
-  pool.run(logInThread);
-  pool.run(logInThread);
-  pool.run(logInThread);
+  // ThreadPool pool("pool");
+  // pool.start(5);  // 线程池中用5个线程
+  // pool.run(logInThread);
+  // pool.run(logInThread);
+  // pool.run(logInThread);
+  // pool.run(logInThread);
+  // pool.run(logInThread);
 
-  LOG_TRACE << "trace";
-  LOG_DEBUG << "debug";
-  LOG_INFO << "Hello";
-  LOG_WARN << "World";
-  LOG_ERROR << "Error";
-  LOG_INFO << sizeof(Logger);
-  LOG_INFO << sizeof(LogStream);
-  LOG_INFO << sizeof(Fmt);
-  LOG_INFO << sizeof(LogStream::Buffer);
+  // LOG_TRACE << "trace";
+  // LOG_DEBUG << "debug";
+  // LOG_INFO << "Hello";
+  // LOG_WARN << "World";
+  // LOG_ERROR << "Error";
+  // LOG_INFO << sizeof(Logger);
+  // LOG_INFO << sizeof(LogStream);
+  // LOG_INFO << sizeof(Fmt);
+  // LOG_INFO << sizeof(LogStream::Buffer);
 
-  sleep(1);
-  bench("nop");
+  // sleep(1);
+  // bench("nop");
 
-  char buffer[64*1024];  // 64KB
+  // char buffer[64*1024];  // 64KB
 
-  g_file = fopen("/dev/null", "w");
-  setbuffer(g_file, buffer, sizeof buffer);
-  bench("/dev/null");
-  fclose(g_file);
+  // g_file = fopen("/dev/null", "w");
+  // setbuffer(g_file, buffer, sizeof buffer);
+  // bench("/dev/null");
+  // fclose(g_file);
 
-  g_file = fopen("/tmp/log", "w");
-  setbuffer(g_file, buffer, sizeof buffer);
-  bench("/tmp/log");
-  fclose(g_file);
+  // g_file = fopen("/tmp/log", "w");
+  // setbuffer(g_file, buffer, sizeof buffer);
+  // bench("/tmp/log");
+  // fclose(g_file);
 
   g_file = NULL;
   g_logFile.reset(new LogFile("test_log_st", 500*1000*1000, false));
