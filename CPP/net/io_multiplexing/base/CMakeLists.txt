@@ -13,6 +13,7 @@ set(base_SRCS
  FileUtil.cpp
  ProcessInfo.cpp
  LogFile.cpp
+ AsyncLogging.cpp
  )
 
 add_library(io_base ${base_SRCS})

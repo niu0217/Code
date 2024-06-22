@@ -50,5 +50,8 @@
 # add_executable(processinfo_test ProcessInfo_test.cpp)
 # target_link_libraries(processinfo_test io_base)
 
-add_executable(logging_test Logging_test.cpp)
-target_link_libraries(logging_test io_base)
+# add_executable(logging_test Logging_test.cpp)
+# target_link_libraries(logging_test io_base)
+
+add_executable(asynclogging_test AsyncLogging_test.cpp)
+target_link_libraries(asynclogging_test io_base)
