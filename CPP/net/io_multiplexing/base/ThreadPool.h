@@ -57,7 +57,7 @@ class ThreadPool : noncopyable
   Task threadInitCallback_;
   std::vector<std::unique_ptr<Thread>> threads_;
   std::deque<Task> queue_ GUARDED_BY(mutex_);
-  size_t maxQueueSize_;
+  size_t maxQueueSize_;  // 任务队列最大长度
   bool running_;
 };
 

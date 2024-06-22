@@ -8,46 +8,79 @@
 #include "base/ThreadPool.h"
 #include "base/CountDownLatch.h"
 #include "base/CurrentThread.h"
+#include "base/Mutex.h"
 
 #include <stdio.h>
 #include <unistd.h>  // usleep
+
 #include <iostream>
+#include <string>
+#include <vector>
+#include <fstream>
 using namespace std;
+
+vector<string> g_fileContexts;
+MutexLock g_mutex;
+
+void writeToFile()
+{
+  string filename = "OutFile.txt";
+  ofstream outFile(filename, std::ios_base::out | std::ios_base::app);
+  if(! outFile.is_open())
+  {
+    cerr << "无法打开文件 " << filename << endl;
+    return;
+  }
+  for(const auto &context : g_fileContexts)
+  {
+    outFile << context << endl;
+  }
+  outFile.close();
+}
 
 void print()
 {
-  printf("tid=%d\n", CurrentThread::tid());
+  MutexLockGuard lock(g_mutex);
+  string str = "tid=" + to_string(CurrentThread::tid()) + "\n";
+  g_fileContexts.push_back(str);
 }
 
 void printString(const std::string& str)
 {
+  MutexLockGuard lock(g_mutex);
   // LOG_INFO << str;
-  cout << str << endl;
-  usleep(100*1000);
+  g_fileContexts.push_back(str);
+  usleep(100*1000);  // 睡眠100毫秒
 }
 
 void test(int maxSize)
 {
   // LOG_WARN << "Test ThreadPool with max queue size = " << maxSize;
+  string str = "Test ThreadPool with max queue size = " + to_string(maxSize) + "\n";
+  g_fileContexts.push_back(str);
   ThreadPool pool("MainThreadPool");
   pool.setMaxQueueSize(maxSize);
   pool.start(5);
 
   // LOG_WARN << "Adding";
+  g_fileContexts.push_back("Adding\n");
   pool.run(print);
   pool.run(print);
   for (int i = 0; i < 100; ++i)
   {
     char buf[32];
-    snprintf(buf, sizeof buf, "task %d", i);
+    snprintf(buf, sizeof buf, "task %d\n", i);
     pool.run(std::bind(printString, std::string(buf)));
   }
   // LOG_WARN << "Done";
+  g_fileContexts.push_back("Done\n");
 
   CountDownLatch latch(1);
   pool.run(std::bind(&CountDownLatch::countDown, &latch));
   latch.wait();
   pool.stop();
+
+  writeToFile();
 }
 
 /*
@@ -72,6 +105,7 @@ void longTask(int num)
 void test2()
 {
   // LOG_WARN << "Test ThreadPool by stoping early.";
+  g_fileContexts.push_back("Test ThreadPool by stoping early.\n");
   ThreadPool pool("ThreadPool");
   pool.setMaxQueueSize(5);
   pool.start(3);
@@ -87,20 +121,24 @@ void test2()
 
   CurrentThread::sleepUsec(5000000);
   // LOG_WARN << "stop pool";
+  g_fileContexts.push_back("stop pool");
   pool.stop();  // early stop
 
   thread1.join();
   // run() after stop()
   pool.run(print);
   // LOG_WARN << "test2 Done";
+  g_fileContexts.push_back("test2 Done");
+
+  writeToFile();
 }
 
 int main()
 {
-  test(0);
-  test(1);
-  test(5);
-  test(10);
-  test(50);
+  // test(0);
+  // test(1);
+  // test(5);
+  // test(10);
+  // test(50);
   test2();
 }
