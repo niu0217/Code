@@ -35,5 +35,20 @@
 # add_executable(blockingqueue_bench BlockingQueue_bench.cpp)
 # target_link_libraries(blockingqueue_bench io_base)
 
-add_executable(boundedblockingqueue_test BoundedBlockingQueue_test.cpp)
-target_link_libraries(boundedblockingqueue_test io_base)
+# add_executable(boundedblockingqueue_test BoundedBlockingQueue_test.cpp)
+# target_link_libraries(boundedblockingqueue_test io_base)
+
+# if(BOOSTTEST_LIBRARY)
+# add_executable(logstream_test LogStream_test.cpp)
+# target_link_libraries(logstream_test io_base boost_unit_test_framework)
+# add_test(NAME logstream_test COMMAND logstream_test)
+# endif()
+
+# add_executable(logstream_bench LogStream_bench.cpp)
+# target_link_libraries(logstream_bench io_base)
+
+# add_executable(processinfo_test ProcessInfo_test.cpp)
+# target_link_libraries(processinfo_test io_base)
+
+add_executable(logging_test Logging_test.cpp)
+target_link_libraries(logging_test io_base)

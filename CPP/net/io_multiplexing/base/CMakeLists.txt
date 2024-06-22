@@ -8,6 +8,11 @@ set(base_SRCS
  CountDownLatch.cpp
  Exception.cpp
  ThreadPool.cpp
+ LogStream.cpp
+ Logging.cpp
+ FileUtil.cpp
+ ProcessInfo.cpp
+ LogFile.cpp
  )
 
 add_library(io_base ${base_SRCS})
