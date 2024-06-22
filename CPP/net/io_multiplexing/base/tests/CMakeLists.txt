@@ -26,5 +26,14 @@
 # add_executable(threadlocalsingleton_test ThreadLocalSingleton_test.cpp)
 # target_link_libraries(threadlocalsingleton_test io_base)
 
-add_executable(threadpool_test ThreadPool_test.cpp)
-target_link_libraries(threadpool_test io_base)
+# add_executable(threadpool_test ThreadPool_test.cpp)
+# target_link_libraries(threadpool_test io_base)
+
+# add_executable(blockingqueue_test BlockingQueue_test.cpp)
+# target_link_libraries(blockingqueue_test io_base)
+
+# add_executable(blockingqueue_bench BlockingQueue_bench.cpp)
+# target_link_libraries(blockingqueue_bench io_base)
+
+add_executable(boundedblockingqueue_test BoundedBlockingQueue_test.cpp)
+target_link_libraries(boundedblockingqueue_test io_base)
