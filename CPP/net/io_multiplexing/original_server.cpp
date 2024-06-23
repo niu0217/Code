@@ -11,11 +11,24 @@
 #include <netinet/in.h>
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <errno.h>
+#include <fcntl.h>
 
 #define PORT 8888
 #define BUFFER_SIZE 1024
 
 #pragma GCC diagnostic ignored "-Wold-style-cast"
+
+void setnonblocking(int fd)
+{
+  // 在这种模式下，如果执行的操作不能立即完成（例如读取一个未准备好的文件），
+  // 那么调用将不会阻塞调用者，而是立即返回错误或特殊值。这对于那些不希望等待I/O操作完成
+  // 的应用程序很有用，因为它们可以继续执行其他任务而不是等待I/O操作完成。
+  // 注意：这样实现的是非阻塞同步，文件描述符准备就绪后，从内核中拷贝数据到应用中，
+  //      这是同步的
+  int flags = fcntl(fd, F_GETFL, 0);
+  fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+}
 
 int main()
 {
@@ -60,6 +73,7 @@ int main()
     std::cerr << "Listen failed" << std::endl;
     return 1;
   }
+  setnonblocking(listenFd);
 
   // Loop to receive messages and echo back
   int cliNumber = 1;
@@ -68,6 +82,12 @@ int main()
     // Accept an incoming connection
     if ((connFd = accept(listenFd, (struct sockaddr *)&cliAddress, (socklen_t *)&addrlen)) < 0)
     {
+      if(errno == EAGAIN)
+      {
+        printf("此时没有客户连接，继续等待\n");
+        sleep(2);
+        continue;
+      }
       if (errno == EMFILE)
       {
         // 对于这个服务器永远不会发生，因为它一次只能处理一个客户连接，所以

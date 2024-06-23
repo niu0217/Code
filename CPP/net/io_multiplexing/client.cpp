@@ -76,15 +76,15 @@ void clientThreadFunc()
     close(servFd);
     return;
   }
-  // std::cout << "Server response: " << buffer << std::endl;
+  std::cout << "Server response: " << buffer << std::endl;
 
   close(servFd);
-  LOG_INFO << CurrentThread::name() << "  leave";
+  LOG_DEBUG << CurrentThread::name() << "  leave";
 }
 
 void quickTask()
 {
-  LOG_INFO << CurrentThread::name() << "  leave";
+  LOG_DEBUG << CurrentThread::name() << "  leave";
 }
 
 /// 创建 numThreads 个线程，然后都向服务器发送hello消息
@@ -106,7 +106,8 @@ void launchXConnection(const int numThreads)
 
 int main()
 {
-  Logger::setOutput(dummyOutput);
-  g_logFile.reset(new LogFile("ClientLog", 500*1000*1000, false));
+  // Logger::setOutput(dummyOutput);
+  // g_logFile.reset(new LogFile("ClientLog", 500*1000*1000, false));
+  g_logFile = nullptr;
   launchXConnection(10);
 }

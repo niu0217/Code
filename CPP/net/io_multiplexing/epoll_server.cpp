@@ -50,6 +50,8 @@ struct epoll_event
 #include <iostream>
 #include <unordered_map>
 
+#pragma GCC diagnostic ignored "-Wold-style-cast"
+
 #define MAX_PENDING 1024
 #define BUFFER_SIZE 1024
 
@@ -182,7 +184,7 @@ public:
       }
       else if (received > 0)
       {
-        buffer[received] = 0;
+        buffer[received] = '\0';
         std::cout << "Reading: " << buffer << std::endl;
         if (strcmp(buffer, "stop") == 0)
         {
@@ -220,14 +222,14 @@ public:
   }
 
 private:
-  int received = 0;
+  ssize_t received = 0;
   char buffer[BUFFER_SIZE];
 };
 
 class ServerHandler : public Handler
 {
 public:
-  ServerHandler(int port)
+  ServerHandler(uint16_t port)
   {
     int listenFd;
     struct sockaddr_in addr;
@@ -262,7 +264,7 @@ public:
 
   virtual int handle(epoll_event &e) override
   {
-    int fd = e.data.fd;
+    int fd = e.data.fd;  // 这个其实就是监听套接字
     struct sockaddr_in clientAddr;
     socklen_t clientAddrLen = sizeof(clientAddr);
 
@@ -270,6 +272,10 @@ public:
 
     if (connFd < 0)
     {
+      if (errno == EAGAIN)
+      {
+        std::cout << "目前没有客户连接\n";
+      }
       /// TODO 处理文件描述符用尽的情况
       std::cout << "Error accepting connection" << std::endl;
       return -1;

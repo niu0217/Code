@@ -64,3 +64,12 @@ target_link_libraries(client io_base)
 
 # add_executable(original_server original_server.cpp)
 # target_link_libraries(original_server io_base)
+
+# add_executable(select_server select_server.cpp)
+# target_link_libraries(select_server io_base)
+
+# add_executable(poll_server poll_server.cpp)
+# target_link_libraries(poll_server io_base)
+
+add_executable(epoll_server epoll_server.cpp)
+target_link_libraries(epoll_server io_base)

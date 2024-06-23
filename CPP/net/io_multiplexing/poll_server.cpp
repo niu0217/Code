@@ -16,13 +16,15 @@
 #include <unistd.h>
 #include <sys/poll.h>
 
+#pragma GCC diagnostic ignored "-Wold-style-cast"
+
 #define MAX_CLI 50
 
 int clients[MAX_CLI];  // 保存所有已经连接的客户端文件描述符
 struct sockaddr_in clientaddr;
 socklen_t len = sizeof(clientaddr);
 
-int createSocket(int port)
+int createSocket(uint16_t port)
 { 
   /// 创建并绑定网络监听的socket套接字
   int fd;
@@ -58,7 +60,7 @@ int createSocket(int port)
 
 int recvMsg(int fd, char *buff, int size)
 {
-  int rsize = recv(fd, buff, sizeof(char) * size, 0);
+  ssize_t rsize = recv(fd, buff, sizeof(char) * size, 0);
   if (rsize <= 0)
   {
     if (rsize == 0)
@@ -74,7 +76,7 @@ int recvMsg(int fd, char *buff, int size)
 
 int sendMsg(int fd, char *buff, int size)
 {
-  int ssize = send(fd, buff, sizeof(char) * size, 0);
+  ssize_t ssize = send(fd, buff, sizeof(char) * size, 0);
   if (ssize <= 0)
   {
     if (ssize == 0)
@@ -95,6 +97,7 @@ void echoWork(int listenFd)
 
   while (1)
   {
+    // -1 无限期等待，直到至少有一个文件描述符变为就绪状态
     int ret = poll(fds, MAX_CLI + 1, -1);
     if (ret == -1)
     {
@@ -148,7 +151,7 @@ void echoWork(int listenFd)
         {
           if (recvState == 0)
           {
-            printf("disconnect one client\n");
+            printf("read disconnect one client\n");
           }
           else
           {

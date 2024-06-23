@@ -18,33 +18,7 @@
 #define MAX_CLIENTS 50
 #define BUFFER_SIZE 1024
 
-void printConn(const int *clientArr)
-{
-  for(int i = 0; i < MAX_CLIENTS; i++)
-  {
-    printf("conn %d = %d\n", i, clientArr[i]);
-  }
-  printf("\n");
-}
-
-void writeConnToFile(const int * clientArr)
-{
-  std::ofstream outFile("output.txt", std::ios::out | std::ios::app);
-  if(outFile.is_open())
-  {
-    for (int i = 0; i < MAX_CLIENTS; i++)
-    {
-      outFile << "conn " << i << " = " << clientArr[i] << std::endl;
-    }
-    outFile << std::endl;
-  }
-  else
-  {
-    std::cerr << "打开文件失败\n";
-  }
-
-  outFile.close();
-}
+#pragma GCC diagnostic ignored "-Wold-style-cast"
 
 int main()
 {
@@ -67,7 +41,6 @@ int main()
     perror("Socket creation failed");
     exit(EXIT_FAILURE);
   }
-  printf("listenFd = %d\n\n", listenFd);
 
   // Set socket options
   if (setsockopt(listenFd, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT, &opt, sizeof(opt)))
@@ -119,8 +92,6 @@ int main()
         maxFd = curFd;
       }
     }
-    // printConn(clientArr);
-    writeConnToFile(clientArr);
 
     // 使用select关注多个文件描述符的事件
     // 在这里会阻塞，直到readfds中的文件描述符有事件发生
@@ -146,6 +117,12 @@ int main()
           break;
         }
       }
+
+      activity--;
+      if(activity == 0)
+      {
+        continue;
+      }
     }
 
     // 处理clientArr中客户发生的事件
@@ -155,7 +132,7 @@ int main()
 
       if (FD_ISSET(curFd, &readfds))
       {
-        int valread;
+        ssize_t valread;
         if ((valread = read(curFd, buffer, BUFFER_SIZE)) == 0)
         {
           /// 特别注意：在这里我们没有数据要处理，因此这个过程如果我们抓包的话，会发现
