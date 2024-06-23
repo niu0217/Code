@@ -15,17 +15,18 @@
 #define PORT 8888
 #define BUFFER_SIZE 1024
 
+#pragma GCC diagnostic ignored "-Wold-style-cast"
+
 int main()
 {
   int listenFd;
   int connFd;
-  int valread;
+  ssize_t valread;
   struct sockaddr_in serAddress;
   struct sockaddr_in cliAddress;
   int opt = 1;
   int addrlen = sizeof(serAddress);
   char buffer[BUFFER_SIZE] = {0};
-  const char *hello = "Hello from server";
 
   // Create a socket
   if ((listenFd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
@@ -83,6 +84,7 @@ int main()
     valread = read(connFd, buffer, BUFFER_SIZE);
     if (valread <= 0)
     {
+      // 说明客户端断开了连接
       close(connFd);
       break;
     }
@@ -91,6 +93,7 @@ int main()
     send(connFd, buffer, strlen(buffer), 0);
     memset(buffer, 0, BUFFER_SIZE);
 
+    // sleep(2);
     // close(connFd);
   }
 

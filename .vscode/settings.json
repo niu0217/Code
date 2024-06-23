@@ -64,7 +64,10 @@
     "typeindex": "cpp",
     "typeinfo": "cpp",
     "variant": "cpp",
-    "condition_variable": "cpp"
+    "condition_variable": "cpp",
+    "strstream": "cpp",
+    "iomanip": "cpp",
+    "mutex": "cpp"
   },
   "editor.wordWrap": "on"
 }
