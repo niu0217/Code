@@ -69,5 +69,6 @@
     "iomanip": "cpp",
     "mutex": "cpp"
   },
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "cmake.sourceDirectory": "/home/ubuntu/GithubFile/Code/CPP/net/io_multiplexing/base"
 }
