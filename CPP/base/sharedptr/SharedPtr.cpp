@@ -169,11 +169,53 @@ void resetTest()
   cout << *pObj6 << endl;            // 20
 }
 
+// 会内存泄漏 80个字节
+class TestLink
+{
+ public:
+  TestLink()
+  {
+    cout << "constructer" << endl;
+    arr = new int[20];
+  }
+  ~TestLink()
+  {
+    cout << "destory" << endl;
+  }
+ private:
+  int *arr;
+};
+// 无内存泄漏
+// 特别注意 shared_ptr 一般管理的是单个对象 使用的是delete
+// 如果想要管理动态数组
+//  std::shared_ptr<int> arr(new int[20], std::default_delete<int[]>());
+class TestNoLeaks
+{
+ public:
+  TestNoLeaks()
+  {
+    cout << "constructer" << endl;
+    arr = make_shared<int>(20);
+  }
+  ~TestNoLeaks()
+  {
+    cout << "destory" << endl;
+  }
+ private:
+  shared_ptr<int> arr;
+};
+void testDestory()
+{
+  // TestLink t;
+  TestNoLeaks t;
+}
+
 int main()
 {
   // baseuseTest();
   // testspace1::cloneTest();
   // testspace2::cloneTest();
   // moveTest();
-  resetTest();
+  // resetTest();
+  testDestory();
 }

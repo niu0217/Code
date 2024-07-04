@@ -1,8 +1,8 @@
 CFLAGS = -g -Wall -std=c++11
 LIBS =  
 
-SRCS = dir_operation_test.cpp
-EXECUTABLE = dir_operation_test
+SRCS = parse_http.cpp
+EXECUTABLE = parse_http
 CC = g++
 
 all:
