@@ -59,8 +59,8 @@ add_subdirectory(base)
 # 
 # 编译可执行文件
 # 
-add_executable(client client.cpp)
-target_link_libraries(client io_base)
+# add_executable(client client.cpp)
+# target_link_libraries(client io_base)
 
 # add_executable(original_server original_server.cpp)
 # target_link_libraries(original_server io_base)
