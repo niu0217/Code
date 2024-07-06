@@ -1,8 +1,8 @@
 CFLAGS = -g -Wall -std=c++11
 LIBS =  -lpthread
 
-SRCS = thread_sem_pc.cpp
-EXECUTABLE = thread_sem_pc
+SRCS = threadlock_c11.cpp
+EXECUTABLE = threadlock_c11
 CC = g++
 
 all:
