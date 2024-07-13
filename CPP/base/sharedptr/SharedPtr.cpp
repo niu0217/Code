@@ -8,6 +8,7 @@
 #include <iostream>
 #include <memory> // 智能指针
 #include <vector>
+#include <list>
 using namespace std;
 
 /// 测试使用 shared_from_this
@@ -28,14 +29,19 @@ class Robot : public enable_shared_from_this<Robot>
 
   shared_ptr<Robot> clone()
   {
-    return shared_from_this();
+    return this->shared_from_this();
+  }
+  shared_ptr<Robot> clone2()
+  {
+    Robot *robot = this;
+    return robot->shared_from_this();
   }
 };
 
 void cloneTest()
 {
   shared_ptr<Robot> robotPtr(new Robot);
-  shared_ptr<Robot> cloneRobotPtr = robotPtr->clone();
+  shared_ptr<Robot> cloneRobotPtr = robotPtr->clone2();
 
   cout << robotPtr.use_count() << endl;      // 2
   cout << cloneRobotPtr.use_count() << endl; // 2
@@ -210,6 +216,73 @@ void testDestory()
   TestNoLeaks t;
 }
 
+namespace testcase3
+{
+
+list<shared_ptr<int>> nums;
+
+void add(shared_ptr<int> ptr)
+{
+  cout << "two " << ptr.use_count() << endl;  // 2
+  nums.push_back(ptr);  // 3
+  cout << "three " << ptr.use_count() << endl;
+  // cout << nums.front().use_count() << endl;
+}
+
+void test()
+{
+  shared_ptr<int> ptrA = make_shared<int>(20);
+  cout << "one " << ptrA.use_count() << endl;  // 1
+  add(ptrA);
+  cout << "four " << ptrA.use_count() << endl;  // 2
+}
+
+}  // testcase3
+
+namespace testcase4
+{
+
+list<shared_ptr<int>> nums;
+
+void add(shared_ptr<int> &ptr)
+{
+  cout << "two " << ptr.use_count() << endl;  // 1
+  nums.push_back(ptr);  // 2
+  cout << "three " << ptr.use_count() << endl;
+}
+
+void test()
+{
+  shared_ptr<int> ptrA = make_shared<int>(20);
+  cout << "one " << ptrA.use_count() << endl;  // 1
+  add(ptrA);
+  cout << "four " << ptrA.use_count() << endl;  // 2
+}
+
+}  // testcase4
+
+namespace testcase5
+{
+
+list<shared_ptr<int>> nums;
+
+void add(shared_ptr<int> *ptr)
+{
+  cout << "two " << ptr->use_count() << endl;  // 1
+  nums.push_back(*ptr);  // 2
+  cout << "three " << ptr->use_count() << endl;
+}
+
+void test()
+{
+  shared_ptr<int> ptrA = make_shared<int>(20);
+  cout << "one " << ptrA.use_count() << endl;  // 1
+  add(&ptrA);
+  cout << "four " << ptrA.use_count() << endl;  // 2
+}
+
+}  // testcase5
+
 int main()
 {
   // baseuseTest();
@@ -217,5 +290,8 @@ int main()
   // testspace2::cloneTest();
   // moveTest();
   // resetTest();
-  testDestory();
+  // testDestory();
+  // testcase3::test();
+  // testcase4::test();
+  testcase5::test();
 }
