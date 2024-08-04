@@ -8,25 +8,55 @@
 // g++ -g -o test test.cpp
 
 #include <iostream>
-#include <vector>
+#include <typeinfo>
+
+class Base {
+public:
+    virtual ~Base() {}  // 确保有虚析构函数以启用 RTTI
+};
+
+class Derived : public Base {
+public:
+    void show() {
+        std::cout << "Derived class" << std::endl;
+    }
+};
+
+class AnotherClass : public Base {
+public:
+    void display() {
+        std::cout << "Another class" << std::endl;
+    }
+};
+
+// 自定义 dynamic_cast 实现
+template<typename TargetType, typename SourceType>
+TargetType safe_dynamic_cast(SourceType* source) {
+    // 使用 typeid 进行类型检查
+    if (dynamic_cast<TargetType>(source) != nullptr) {
+        return static_cast<TargetType>(source);
+    }
+    return nullptr;  // 转换失败时返回 nullptr
+}
 
 int main() {
-    std::vector<int> vec;
+    Base* base = new Derived();  // 创建派生类对象
 
-    // 添加一些元素
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3);
+    // 使用自定义动态转换
+    Derived* derived = safe_dynamic_cast<Derived*>(base);
+    if (derived) {
+        derived->show();  // 输出: Derived class
+    } else {
+        std::cout << "Casting failed!" << std::endl;
+    }
 
-    std::cout << "Size: " << vec.size() << ", Capacity: " << vec.capacity() << std::endl;
+    AnotherClass* another = safe_dynamic_cast<AnotherClass*>(base);
+    if (another) {
+        another->display();  // 不会被调用
+    } else {
+        std::cout << "Casting failed!" << std::endl;  // 输出: Casting failed!
+    }
 
-    // 删除所有元素
-    vec.clear();
-    std::cout << "Size after clear: " << vec.size() << ", Capacity: " << vec.capacity() << std::endl;
-
-    // 调整容量
-    vec.shrink_to_fit();
-    std::cout << "Size after shrink_to_fit: " << vec.size() << ", Capacity: " << vec.capacity() << std::endl;
-
+    delete base;  // 清理内存
     return 0;
 }

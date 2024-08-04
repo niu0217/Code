@@ -14,25 +14,23 @@ using namespace std;
 // O(nlogn)	O(nlogn)	O(nlogn)	O(n)	稳定
 void merge(vector<int>& elements, int idxStart, int idxMid, int idxEnd)
 {
-  vector<int> leftSubArray(elements.begin() + idxStart,
-                           elements.begin() + idxMid + 1);
-  vector<int> rightSubArray(elements.begin() + idxMid + 1,
-                            elements.begin() + idxEnd + 1);
-  leftSubArray.insert(leftSubArray.end(), numeric_limits<int>::max());
-  rightSubArray.insert(rightSubArray.end(), numeric_limits<int>::max());
+  vector<int> leftArr(elements.begin() + idxStart,
+                      elements.begin() + idxMid + 1);
+  vector<int> rightArr(elements.begin() + idxMid + 1,
+                       elements.begin() + idxEnd + 1);
+  leftArr.insert(leftArr.end(), numeric_limits<int>::max());
+  rightArr.insert(rightArr.end(), numeric_limits<int>::max());
   int left = 0;
   int right = 0;
   for (int i = idxStart; i <= idxEnd; i++)
   {
-    if (leftSubArray[left] < rightSubArray[right])
+    if (leftArr[left] < rightArr[right])
     {
-      elements[i] = leftSubArray[left];
-      left++;
+      elements[i] = leftArr[left++];
     }
     else
     {
-      elements[i] = rightSubArray[right];
-      right++;
+      elements[i] = rightArr[right++];
     }
   }
 }

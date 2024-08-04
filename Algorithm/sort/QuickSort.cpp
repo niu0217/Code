@@ -17,8 +17,7 @@ int partition(vector<int>& elements, int low, int high)
   int pivot = elements[low];
   while (low < high)
   {
-    // 从右向左找，第一个小于 pivot 的位置
-    while(low < high && elements[high] > pivot)
+    while (low < high && elements[high] >= pivot)
     {
       high--;
     }
@@ -26,8 +25,7 @@ int partition(vector<int>& elements, int low, int high)
     {
       elements[low++] = elements[high];
     }
-    // 从左向右找，第一个大于 pivot 的位置
-    while (low < high && elements[low] < pivot)
+    while (low < high && elements[low] <= pivot)
     {
       low++;
     }
@@ -45,7 +43,7 @@ void quickSort(vector<int>& elements, int low, int high)
   if (low < high)
   {
     int pivot = partition(elements, low, high);
-    quickSort(elements, low, pivot);
+    quickSort(elements, low, pivot - 1);
     quickSort(elements, pivot + 1, high);
   }
 }
