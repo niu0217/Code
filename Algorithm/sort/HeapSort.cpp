@@ -25,7 +25,7 @@ void heapify(vector<int>& arr, int n, int i)
   }
   if (largest != i)
   {
-    swap(arr[largest], arr[i]);
+    swap(arr[i], arr[largest]);
     heapify(arr, n, largest);
   }
 }
@@ -39,14 +39,14 @@ void heapSort(vector<int>& arr)
   }
   for (int i = n - 1; i >= 0; i--)
   {
-    swap(arr[0], arr[i]);
+    swap(arr[i], arr[0]);
     heapify(arr, i, 0);
   }
 }
 
 int main()
 {
-  vector<int> arr = { 1, 4, 7, 2, 5, 8, 90 };
+  vector<int> arr = { 1, 4, 7, 2, 5, 8, 19, 30};
   heapSort(arr);
   for (const auto &num : arr)
   {

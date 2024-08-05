@@ -10,30 +10,30 @@
 #include <algorithm>
 using namespace std;
 
-int partition(vector<int>& arr, int low, int high)
+int partition(vector<int>& arr, int left, int right)
 {
-  int pivot = arr[low];
-  while (low < high)
+  int pivot = arr[left];
+  while (left < right)
   {
-    while (low < high && arr[high] >= pivot)
+    while (left < right && arr[right] >= pivot)
     {
-      high--;
+      right--;
     }
-    if (low < high)
+    if (left < right)
     {
-      arr[low++] = arr[high];
+      arr[left++] = arr[right];
     }
-    while (low < high && arr[low] <= pivot)
+    while (left < right && arr[left] <= pivot)
     {
-      low++;
+      left++;
     }
-    if (low < high)
+    if (left < right)
     {
-      arr[high--] = arr[low];
+      arr[right--] = arr[left];
     }
   }
-  arr[low] = pivot;
-  return low;
+  arr[left] = pivot;
+  return left;
 }
 
 void quickSort(vector<int>& arr, int left, int right)
@@ -48,7 +48,7 @@ void quickSort(vector<int>& arr, int left, int right)
 
 int main()
 {
-  vector<int> arr = { 1, 4, 7, 2, 5, 8, 90 };
+  vector<int> arr = { 1, 4, 7, 2, 5, 8, 19, 30};
   quickSort(arr, 0, arr.size() - 1);
   for (const auto &num : arr)
   {
