@@ -5,58 +5,54 @@
 > Description:   
  ************************************************************************/
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
-// 平均      最坏  最好       空间     是否稳定
-// O(nlogn)	O(n²)	O(nlogn)	O(logn)	不稳定
-int partition(vector<int>& elements, int low, int high)
+int partition(vector<int>& arr, int low, int high)
 {
-  int pivot = elements[low];
+  int pivot = arr[low];
   while (low < high)
   {
-    while (low < high && elements[high] >= pivot)
+    while (low < high && arr[high] >= pivot)
     {
       high--;
     }
     if (low < high)
     {
-      elements[low++] = elements[high];
+      arr[low++] = arr[high];
     }
-    while (low < high && elements[low] <= pivot)
+    while (low < high && arr[low] <= pivot)
     {
       low++;
     }
     if (low < high)
     {
-      elements[high--] = elements[low];
+      arr[high--] = arr[low];
     }
   }
-  elements[low] = pivot;
+  arr[low] = pivot;
   return low;
 }
 
-void quickSort(vector<int>& elements, int low, int high)
+void quickSort(vector<int>& arr, int left, int right)
 {
-  if (low < high)
+  if (left < right)
   {
-    int pivot = partition(elements, low, high);
-    quickSort(elements, low, pivot - 1);
-    quickSort(elements, pivot + 1, high);
+    int pivot = partition(arr, left, right);
+    quickSort(arr, left, pivot - 1);
+    quickSort(arr, pivot + 1, right);
   }
 }
 
 int main()
 {
-  vector<int> elements = {
-      1, 4, 7, 2, 5, 8
-  };
-  int elementsSize = elements.size();
-  quickSort(elements, 0, elementsSize - 1);
-  for(const auto& element : elements) {
-      cout<<element<<" ";
+  vector<int> arr = { 1, 4, 7, 2, 5, 8, 90 };
+  quickSort(arr, 0, arr.size() - 1);
+  for (const auto &num : arr)
+  {
+    cout << num << " ";
   }
-  cout<<endl;
+  cout << endl;
 }

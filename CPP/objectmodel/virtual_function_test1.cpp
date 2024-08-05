@@ -17,9 +17,25 @@ public:
     }
 };
 
+// 占3个字节，但是编译器决定的
+class B
+{
+public:
+  char data1;
+  char data2;
+  char data3;
+};
+
 int main()
 {
     A objA;
     int lengthOfObjA = sizeof(objA);
     cout<<lengthOfObjA<<endl;
+    cout << alignof(objA) << endl;
+
+    cout << "$$$$$$$$$$$$$$$$$$$\n";
+
+    cout << sizeof(B) << endl;
+    B objB;
+    cout << sizeof(objB) << endl;
 }

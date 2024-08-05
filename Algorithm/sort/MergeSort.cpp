@@ -5,19 +5,17 @@
 > Description:   
  ************************************************************************/
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
-// 平均      最坏       最好      空间   是否稳定
-// O(nlogn)	O(nlogn)	O(nlogn)	O(n)	稳定
-void merge(vector<int>& elements, int idxStart, int idxMid, int idxEnd)
+void merge(vector<int>& arr, int idxStart, int idxMid, int idxEnd)
 {
-  vector<int> leftArr(elements.begin() + idxStart,
-                      elements.begin() + idxMid + 1);
-  vector<int> rightArr(elements.begin() + idxMid + 1,
-                       elements.begin() + idxEnd + 1);
+  vector<int> leftArr(arr.begin() + idxStart,
+                      arr.begin() + idxMid + 1);
+  vector<int> rightArr(arr.begin() + idxMid + 1,
+                       arr.begin() + idxEnd + 1);
   leftArr.insert(leftArr.end(), numeric_limits<int>::max());
   rightArr.insert(rightArr.end(), numeric_limits<int>::max());
   int left = 0;
@@ -26,36 +24,34 @@ void merge(vector<int>& elements, int idxStart, int idxMid, int idxEnd)
   {
     if (leftArr[left] < rightArr[right])
     {
-      elements[i] = leftArr[left++];
+      arr[i] = leftArr[left++];
     }
     else
     {
-      elements[i] = rightArr[right++];
+      arr[i] = rightArr[right++];
     }
   }
 }
 
-void mergeSort(vector<int>& elements, int idxStart, int idxEnd)
+void mergeSort(vector<int>& arr, int idxStart, int idxEnd)
 {
   if (idxStart >= idxEnd)
   {
     return;
   }
   int idxMid = idxStart + (idxEnd - idxStart) / 2;
-  mergeSort(elements, idxStart, idxMid);
-  mergeSort(elements, idxMid + 1, idxEnd);
-  merge(elements, idxStart, idxMid, idxEnd);
+  mergeSort(arr, idxStart, idxMid);
+  mergeSort(arr, idxMid + 1, idxEnd);
+  merge(arr, idxStart, idxMid, idxEnd);
 }
 
 int main()
 {
-  vector<int> elements = {
-      1, 4, 7, 2, 5, 8
-  };
-  int elementsSize = elements.size();
-  mergeSort(elements, 0, elementsSize - 1);
-  for(const auto& element : elements) {
-      cout<<element<<" ";
+  vector<int> arr = { 1, 4, 7, 2, 5, 8, 90 };
+  mergeSort(arr, 0, arr.size() - 1);
+  for (const auto &num : arr)
+  {
+    cout << num << " ";
   }
-  cout<<endl;
+  cout << endl;
 }
