@@ -10,7 +10,7 @@
 #include <algorithm>
 using namespace std;
 
-void merge(vector<int>& arr, int idxStart, int idxMid, int idxEnd)
+void merge(vector<int> &arr, int idxStart, int idxMid, int idxEnd)
 {
   vector<int> leftArr(arr.begin() + idxStart,
                       arr.begin() + idxMid + 1);
@@ -22,7 +22,7 @@ void merge(vector<int>& arr, int idxStart, int idxMid, int idxEnd)
   int right = 0;
   for (int i = idxStart; i <= idxEnd; i++)
   {
-    if (leftArr[left] < rightArr[right])
+    if (leftArr[left] <rightArr[right])
     {
       arr[i] = leftArr[left++];
     }
@@ -33,7 +33,7 @@ void merge(vector<int>& arr, int idxStart, int idxMid, int idxEnd)
   }
 }
 
-void mergeSort(vector<int>& arr, int idxStart, int idxEnd)
+void mergeSort(vector<int> &arr, int idxStart, int idxEnd)
 {
   if (idxStart >= idxEnd)
   {
@@ -47,9 +47,9 @@ void mergeSort(vector<int>& arr, int idxStart, int idxEnd)
 
 int main()
 {
-  vector<int> arr = { 1, 4, 7, 2, 5, 8, 19, 30};
+  vector<int> arr = { 100, 23, 45, 10000, 34, 99999, 34 };
   mergeSort(arr, 0, arr.size() - 1);
-  for (const auto &num : arr)
+  for (const auto & num : arr)
   {
     cout << num << " ";
   }

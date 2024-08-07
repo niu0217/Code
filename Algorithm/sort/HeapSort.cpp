@@ -10,7 +10,7 @@
 #include <algorithm>
 using namespace std;
 
-void heapify(vector<int>& arr, int n, int i)
+void heapify(vector<int> &arr, int n, int i)
 {
   int largest = i;
   int left = 2 * i + 1;
@@ -25,12 +25,12 @@ void heapify(vector<int>& arr, int n, int i)
   }
   if (largest != i)
   {
-    swap(arr[i], arr[largest]);
+    swap(arr[largest], arr[i]);
     heapify(arr, n, largest);
   }
 }
 
-void heapSort(vector<int>& arr)
+void heapSort(vector<int> &arr)
 {
   int n = arr.size();
   for (int i = (n / 2) - 1; i >= 0; i--)
@@ -46,9 +46,9 @@ void heapSort(vector<int>& arr)
 
 int main()
 {
-  vector<int> arr = { 1, 4, 7, 2, 5, 8, 19, 30};
+  vector<int> arr = { 100, 23, 45, 10000, 34, 99999, 34 };
   heapSort(arr);
-  for (const auto &num : arr)
+  for (const auto & num : arr)
   {
     cout << num << " ";
   }

@@ -10,7 +10,7 @@
 #include <algorithm>
 using namespace std;
 
-int partition(vector<int>& arr, int left, int right)
+int partition(vector<int> &arr, int left, int right)
 {
   int pivot = arr[left];
   while (left < right)
@@ -36,7 +36,7 @@ int partition(vector<int>& arr, int left, int right)
   return left;
 }
 
-void quickSort(vector<int>& arr, int left, int right)
+void quickSort(vector<int> &arr, int left, int right)
 {
   if (left < right)
   {
@@ -48,9 +48,9 @@ void quickSort(vector<int>& arr, int left, int right)
 
 int main()
 {
-  vector<int> arr = { 1, 4, 7, 2, 5, 8, 19, 30};
+  vector<int> arr = { 100, 23, 45, 10000, 34, 99999, 34 };
   quickSort(arr, 0, arr.size() - 1);
-  for (const auto &num : arr)
+  for (const auto & num : arr)
   {
     cout << num << " ";
   }
