@@ -67,7 +67,7 @@ int main()
 {
   Animal *dogPtr = new Dog(10);
   dogPtr->printAge();
-  dogPtr->eatFood();
-  dogPtr->sleep();
-  dogPtr->speak();
+  dogPtr->speak();  // 0x0
+  dogPtr->eatFood();  // 0x8
+  dogPtr->sleep();  // 0x10
 }

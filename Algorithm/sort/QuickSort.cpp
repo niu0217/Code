@@ -48,9 +48,9 @@ void quickSort(vector<int> &arr, int left, int right)
 
 int main()
 {
-  vector<int> arr = { 100, 23, 45, 10000, 34, 99999, 34 };
+  vector<int> arr = { 1, 4, 7, 2, 5, 8 };
   quickSort(arr, 0, arr.size() - 1);
-  for (const auto & num : arr)
+  for (int num : arr)
   {
     cout << num << " ";
   }
