@@ -10,46 +10,46 @@
 #include <algorithm>
 using namespace std;
 
-void merge(vector<int> &arr, int idxStart, int idxMid, int idxEnd)
+void merge(vector<int> &arr, int left, int mid, int right)
 {
-  vector<int> leftArr(arr.begin() + idxStart,
-                      arr.begin() + idxMid + 1);
-  vector<int> rightArr(arr.begin() + idxMid + 1,
-                       arr.begin() + idxEnd + 1);
+  vector<int> leftArr(arr.begin() + left,
+                      arr.begin() + mid + 1);
+  vector<int> rightArr(arr.begin() + mid + 1,
+                       arr.begin() + right + 1);
   leftArr.insert(leftArr.end(), numeric_limits<int>::max());
   rightArr.insert(rightArr.end(), numeric_limits<int>::max());
-  int left = 0;
-  int right = 0;
-  for (int i = idxStart; i <= idxEnd; i++)
+  int i = 0;
+  int j = 0;
+  for (int k = left; k <= right; k++)
   {
-    if (leftArr[left] <rightArr[right])
+    if (leftArr[i] < rightArr[j])
     {
-      arr[i] = leftArr[left++];
+      arr[k] = leftArr[i++];
     }
     else
     {
-      arr[i] = rightArr[right++];
+      arr[k] = rightArr[j++];
     }
   }
 }
 
-void mergeSort(vector<int> &arr, int idxStart, int idxEnd)
+void mergeSort(vector<int> &arr, int left, int right)
 {
-  if (idxStart >= idxEnd)
+  if (left >= right)
   {
     return;
   }
-  int idxMid = idxStart + (idxEnd - idxStart) / 2;
-  mergeSort(arr, idxStart, idxMid);
-  mergeSort(arr, idxMid + 1, idxEnd);
-  merge(arr, idxStart, idxMid, idxEnd);
+  int mid = left + (right - left) / 2;
+  mergeSort(arr, left, mid);
+  mergeSort(arr, mid + 1, right);
+  merge(arr, left, mid, right);
 }
 
 int main()
 {
-  vector<int> arr = { 100, 23, 45, 10000, 34, 99999, 34 };
+  vector<int> arr = { 1, 4, 7, 2, 5, 8 };
   mergeSort(arr, 0, arr.size() - 1);
-  for (const auto & num : arr)
+  for (int num : arr)
   {
     cout << num << " ";
   }
